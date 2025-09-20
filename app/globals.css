@@ -1,0 +1,283 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  /* Light mode - Professional finance theme */
+  --background: 255 255 255; /* Clean white background */
+  --foreground: 15 23 42; /* Dark text */
+  --card: 248 250 252 / 0.9; /* Light glass cards */
+  --card-foreground: 15 23 42;
+  --popover: 255 255 255;
+  --popover-foreground: 15 23 42;
+  --primary: 65 105 225; /* Royal Blue #4169E1 */
+  --primary-foreground: 255 255 255;
+  --secondary: 219 188 88; /* Gold #DBBC58 */
+  --secondary-foreground: 15 23 42;
+  --muted: 241 245 249;
+  --muted-foreground: 100 116 139;
+  --accent: 46 204 113; /* Emerald Green #2ECC71 */
+  --accent-foreground: 255 255 255;
+  --destructive: 239 68 68; /* Red for losses */
+  --destructive-foreground: 255 255 255;
+  --border: 226 232 240 / 0.4;
+  --input: 248 250 252 / 0.8;
+  --ring: 65 105 225;
+  --chart-1: 65 105 225; /* Royal Blue */
+  --chart-2: 219 188 88; /* Gold */
+  --chart-3: 46 204 113; /* Emerald Green */
+  --chart-4: 239 68 68; /* Red */
+  --chart-5: 147 51 234; /* Purple accent */
+  --radius: 0.75rem;
+  --sidebar: 248 250 252;
+  --sidebar-foreground: 15 23 42;
+  --sidebar-primary: 65 105 225;
+  --sidebar-primary-foreground: 255 255 255;
+  --sidebar-accent: 241 245 249;
+  --sidebar-accent-foreground: 15 23 42;
+  --sidebar-border: 226 232 240 / 0.4;
+  --sidebar-ring: 65 105 225;
+}
+
+.dark {
+  /* Dark mode - Original premium dark theme */
+  --background: 28 28 30; /* Dark Slate #1C1C1E */
+  --foreground: 255 255 255; /* White text */
+  --card: 38 38 42 / 0.8; /* Semi-transparent dark cards for glassmorphism */
+  --card-foreground: 255 255 255;
+  --popover: 38 38 42;
+  --popover-foreground: 255 255 255;
+  --primary: 65 105 225; /* Royal Blue #4169E1 */
+  --primary-foreground: 255 255 255;
+  --secondary: 219 188 88; /* Gold #DBBC58 */
+  --secondary-foreground: 28 28 30;
+  --muted: 63 63 70;
+  --muted-foreground: 161 161 170;
+  --accent: 46 204 113; /* Emerald Green #2ECC71 */
+  --accent-foreground: 255 255 255;
+  --destructive: 239 68 68;
+  --destructive-foreground: 255 255 255;
+  --border: 63 63 70 / 0.3;
+  --input: 51 51 56 / 0.5;
+  --ring: 65 105 225;
+  --chart-1: 65 105 225;
+  --chart-2: 219 188 88;
+  --chart-3: 46 204 113;
+  --chart-4: 239 68 68;
+  --chart-5: 147 51 234;
+  --sidebar: 33 33 36;
+  --sidebar-foreground: 255 255 255;
+  --sidebar-primary: 65 105 225;
+  --sidebar-primary-foreground: 255 255 255;
+  --sidebar-accent: 51 51 56;
+  --sidebar-accent-foreground: 255 255 255;
+  --sidebar-border: 63 63 70 / 0.3;
+  --sidebar-ring: 65 105 225;
+}
+
+@theme inline {
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+  --color-background: rgb(var(--background));
+  --color-foreground: rgb(var(--foreground));
+  --color-card: rgb(var(--card));
+  --color-card-foreground: rgb(var(--card-foreground));
+  --color-popover: rgb(var(--popover));
+  --color-popover-foreground: rgb(var(--popover-foreground));
+  --color-primary: rgb(var(--primary));
+  --color-primary-foreground: rgb(var(--primary-foreground));
+  --color-secondary: rgb(var(--secondary));
+  --color-secondary-foreground: rgb(var(--secondary-foreground));
+  --color-muted: rgb(var(--muted));
+  --color-muted-foreground: rgb(var(--muted-foreground));
+  --color-accent: rgb(var(--accent));
+  --color-accent-foreground: rgb(var(--accent-foreground));
+  --color-destructive: rgb(var(--destructive));
+  --color-destructive-foreground: rgb(var(--destructive-foreground));
+  --color-border: rgb(var(--border));
+  --color-input: rgb(var(--input));
+  --color-ring: rgb(var(--ring));
+  --color-chart-1: rgb(var(--chart-1));
+  --color-chart-2: rgb(var(--chart-2));
+  --color-chart-3: rgb(var(--chart-3));
+  --color-chart-4: rgb(var(--chart-4));
+  --color-chart-5: rgb(var(--chart-5));
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-sidebar: rgb(var(--sidebar));
+  --color-sidebar-foreground: rgb(var(--sidebar-foreground));
+  --color-sidebar-primary: rgb(var(--sidebar-primary));
+  --color-sidebar-primary-foreground: rgb(var(--sidebar-primary-foreground));
+  --color-sidebar-accent: rgb(var(--sidebar-accent));
+  --color-sidebar-accent-foreground: rgb(var(--sidebar-accent-foreground));
+  --color-sidebar-border: rgb(var(--sidebar-border));
+  --color-sidebar-ring: rgb(var(--sidebar-ring));
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground transition-colors duration-300;
+  }
+
+  /* Custom glassmorphism utilities */
+  .glass {
+    @apply backdrop-blur-xl bg-card/80 border border-border/50 transition-all duration-300;
+  }
+
+  .glass-strong {
+    @apply backdrop-blur-2xl bg-card/90 border border-border/60 transition-all duration-300;
+  }
+
+  /* Enhanced premium animations for judge appeal */
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+
+  .animate-glow {
+    animation: glow 2s ease-in-out infinite alternate;
+  }
+
+  .animate-slide-up {
+    animation: slideUp 0.5s ease-out;
+  }
+
+  .animate-pulse-glow {
+    animation: pulseGlow 3s ease-in-out infinite;
+  }
+
+  .animate-bounce-subtle {
+    animation: bounceSubtle 2s ease-in-out infinite;
+  }
+
+  .animate-scale-in {
+    animation: scaleIn 0.3s ease-out;
+  }
+
+  .animate-fade-in {
+    animation: fadeIn 0.8s ease-out;
+  }
+
+  .animate-slide-right {
+    animation: slideRight 0.6s ease-out;
+  }
+
+  .animate-rotate-slow {
+    animation: rotateSlow 20s linear infinite;
+  }
+
+  /* Chart container fix for visibility */
+  .recharts-wrapper {
+    @apply w-full h-full;
+  }
+
+  .recharts-surface {
+    @apply overflow-visible;
+  }
+
+  /* Added responsive breakpoint utilities */
+  .responsive-grid {
+    @apply grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4;
+  }
+
+  .responsive-flex {
+    @apply flex flex-col sm:flex-row items-start sm:items-center gap-4;
+  }
+
+  @keyframes float {
+    0%,
+    100% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+
+  @keyframes glow {
+    from {
+      box-shadow: 0 0 20px -10px rgb(var(--primary));
+    }
+    to {
+      box-shadow: 0 0 30px -5px rgb(var(--primary));
+    }
+  }
+
+  @keyframes slideUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes pulseGlow {
+    0%,
+    100% {
+      box-shadow: 0 0 20px -10px rgb(var(--accent));
+      transform: scale(1);
+    }
+    50% {
+      box-shadow: 0 0 40px -5px rgb(var(--accent));
+      transform: scale(1.02);
+    }
+  }
+
+  @keyframes bounceSubtle {
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-5px);
+    }
+  }
+
+  @keyframes scaleIn {
+    from {
+      opacity: 0;
+      transform: scale(0.9);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  @keyframes slideRight {
+    from {
+      opacity: 0;
+      transform: translateX(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes rotateSlow {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+}
