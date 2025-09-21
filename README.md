@@ -36,11 +36,17 @@ HexaPulse FinPocket transforms how individuals and professionals interact with f
 - **Commodities Tracking** - Energy, Metals, Agriculture with supply/demand analytics
 - **Fixed Income Analysis** - Government and corporate bonds with yield curve modeling
 
-## 🛠️ Advanced Technology Stack
+## 🛠️ Technology Stack
+
+![Next.js](https://img.shields.io/badge/Next.js-15-black?style=for-the-badge&logo=next.js&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-5-blue?style=for-the-badge&logo=typescript&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-4-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
+![React](https://img.shields.io/badge/React-18-61DAFB?style=for-the-badge&logo=react&logoColor=black)
+![Node.js](https://img.shields.io/badge/Node.js-20-339933?style=for-the-badge&logo=node.js&logoColor=white)
 
 ### Frontend Architecture
 - **Framework**: Next.js 15 with Server Components and Edge Runtime
-- **Styling**: Tailwind CSS v4 with CSS-in-JS optimizations
+- **Styling**: Tailwind CSS v4 with CSS-in-JS optimizations  
 - **State Management**: Zustand with persistent storage
 - **UI Framework**: Custom shadcn/ui with financial-specific components
 - **Charts**: TradingView Charting Library + Recharts hybrid
@@ -53,13 +59,6 @@ HexaPulse FinPocket transforms how individuals and professionals interact with f
 - **AI/ML**: TensorFlow.js and custom neural networks
 - **Caching**: Multi-tier caching with Redis and CDN
 - **API Architecture**: GraphQL with REST fallbacks
-
-### Security & Compliance
-- **Authentication**: Multi-factor authentication with biometric support
-- **Encryption**: End-to-end encryption for sensitive data
-- **Compliance**: SOX, GDPR, and financial regulations adherence
-- **Audit Trail**: Complete transaction and access logging
-- **Secure Trading**: Bank-level security with hardware security modules
 
 ## 🎨 Design Excellence
 
@@ -349,52 +348,18 @@ npm run test:a11y
 - **Predictive UX**: AI-driven interface personalization
 - **Neural Networks**: On-device AI processing
 
-## 📞 Support & Contact
+## 👥 Contributors
 
-### Customer Support
-- **24/7 Live Chat**: Instant technical assistance
-- **Video Support**: Screen sharing troubleshooting
-- **Phone Support**: Direct hotline for premium users
-- **Email Support**: Technical and account inquiries
-- **Knowledge Base**: Searchable FAQ and tutorials
-- **Status Page**: Real-time platform health updates
+Built with dedication by
 
-### Business Inquiries
-- **Enterprise Sales**: custom-solutions@hexapulse.com
-- **Partnerships**: partners@hexapulse.com
-- **Media Inquiries**: press@hexapulse.com
-- **Investor Relations**: investors@hexapulse.com
-- **Careers**: careers@hexapulse.com
+| Name | Email | LinkedIn |
+|------|-------|----------|
+| Hemasri M | hemaleena1102@gmail.com | https://www.linkedin.com/in/hemasri-m/ |
+| Pranav Aditya P S | pspranavadityacvm@gmail.com | https://www.linkedin.com/in/pranav-aditya-ps/ |
 
-### Development Community
-- **GitHub Repository**: https://github.com/hexapulse/finpocket
-- **Discord Community**: https://discord.gg/hexapulse
-- **Stack Overflow**: #hexapulse-finpocket tag
-- **Reddit Community**: r/HexaPulseTrading
-- **Twitter Updates**: @HexaPulseFinPocket
+## 🤝 Get In Touch
 
-## 📄 Legal & Compliance
-
-### Licensing
-- **Core Platform**: MIT License for community version
-- **Premium Features**: Commercial license required
-- **Enterprise Edition**: Custom licensing agreements
-- **API Usage**: Rate-limited free tier, paid premium access
-- **Data Rights**: User data ownership and portability
-
-### Regulatory Compliance
-- **SEC Compliance**: US securities regulations adherence
-- **CFTC Registration**: Commodity futures compliance
-- **GDPR**: European data protection compliance  
-- **CCPA**: California consumer privacy act adherence
-- **Financial Licenses**: Global regulatory approvals
-
-### Risk Disclaimers
-- **Investment Risk**: Past performance doesn't guarantee future results
-- **Market Volatility**: Financial markets involve substantial risk
-- **Technology Risk**: Platform availability and performance disclaimers
-- **Regulatory Risk**: Compliance with changing regulations
-- **Educational Purpose**: Platform information is for educational use
+For questions or collaboration opportunities, feel free to reach out to any team member above.
 
 ---
 
