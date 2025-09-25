@@ -271,38 +271,6 @@ export function QuickStats() {
           </Card>
         ))}
       </div>
-
-      {/* Market Insights */}
-      <Card className="glass animate-fade-in" style={{ animationDelay: "1200ms" }}>
-        <CardHeader>
-          <CardTitle className="flex items-center gap-2">
-            <Zap className="h-4 w-4 sm:h-5 sm:w-5 text-secondary animate-rotate-slow" />
-            <span className="text-sm sm:text-base">AI Market Insights</span>
-          </CardTitle>
-        </CardHeader>
-        <CardContent>
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
-            <div className="text-center p-4 rounded-lg glass-strong animate-pulse-glow">
-              <div className="text-xl sm:text-2xl font-bold text-accent">94%</div>
-              <div className="text-xs sm:text-sm text-muted-foreground">Prediction Accuracy</div>
-            </div>
-            <div
-              className="text-center p-4 rounded-lg glass-strong animate-pulse-glow"
-              style={{ animationDelay: "200ms" }}
-            >
-              <div className="text-xl sm:text-2xl font-bold text-primary">15.2%</div>
-              <div className="text-xs sm:text-sm text-muted-foreground">Expected Return</div>
-            </div>
-            <div
-              className="text-center p-4 rounded-lg glass-strong animate-pulse-glow"
-              style={{ animationDelay: "400ms" }}
-            >
-              <div className="text-xl sm:text-2xl font-bold text-secondary">Low</div>
-              <div className="text-xs sm:text-sm text-muted-foreground">Risk Level</div>
-            </div>
-          </div>
-        </CardContent>
-      </Card>
     </div>
   )
 }

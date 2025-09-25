@@ -23,10 +23,6 @@ export default function HomePage() {
         <div className="animate-slide-up" style={{ animationDelay: "300ms" }}>
           <AdvancedStockTicker />
         </div>
-
-        {/* News Cards */}
-       
-
         <div className="animate-slide-up" style={{ animationDelay: "400ms" }}>
           <AdvancedAnalytics />
         </div>
@@ -34,9 +30,6 @@ export default function HomePage() {
         <div className="grid grid-cols-1 xl:grid-cols-3 gap-6 animate-slide-up" style={{ animationDelay: "500ms" }}>
           <div className="xl:col-span-2">
             <QuickStats />
-          </div>
-          <div className="xl:col-span-1">
-            <RealTimeNewsFeed />
           </div>
         </div>
 
