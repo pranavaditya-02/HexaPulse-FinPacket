@@ -2,7 +2,6 @@ import { Navigation } from "@/components/navigation"
 import { DailyDigest } from "@/components/daily-digest"
 import { AdvancedStockTicker } from "@/components/advanced-stock-ticker"
 import { QuickStats } from "@/components/quick-stats"
-import { AIVoiceAssistant } from "@/components/ai-voice-assistant"
 import { AdvancedAnalytics } from "@/components/advanced-analytics"
 import { RealTimeNewsFeed } from "@/components/real-time-news-feed"
 import { MarketHeatmapPreview } from "@/components/market-heatmap-preview"
@@ -15,16 +14,18 @@ export default function HomePage() {
       <Navigation />
 
       <main className="container mx-auto px-4 sm:px-6 lg:px-8 py-4 sm:py-6 space-y-6 sm:space-y-8">
+
+         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 animate-slide-up" style={{ animationDelay: "350ms" }}>
+          <LiveNewsStream />
+          <FilteredNewsFeed />
+        </div>
         {/* Advanced Real-time Stock Ticker */}
         <div className="animate-slide-up" style={{ animationDelay: "300ms" }}>
           <AdvancedStockTicker />
         </div>
 
         {/* News Cards */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 animate-slide-up" style={{ animationDelay: "350ms" }}>
-          <LiveNewsStream />
-          <FilteredNewsFeed />
-        </div>
+       
 
         <div className="animate-slide-up" style={{ animationDelay: "400ms" }}>
           <AdvancedAnalytics />

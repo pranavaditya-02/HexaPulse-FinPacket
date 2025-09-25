@@ -108,11 +108,11 @@ export function FilteredNewsFeed() {
       <CardContent>
         <Tabs defaultValue="all" value={activeTab} onValueChange={setActiveTab}>
           <TabsList className="mb-4">
-            <TabsTrigger value="all">All News</TabsTrigger>
-            <TabsTrigger value="markets">Markets</TabsTrigger>
-            <TabsTrigger value="stocks">Stocks</TabsTrigger>
-            <TabsTrigger value="economy">Economy</TabsTrigger>
-            <TabsTrigger value="crypto">Crypto</TabsTrigger>
+            <TabsTrigger value="all" className="text-xs sm:text-sm">All News</TabsTrigger>
+            <TabsTrigger value="markets" className="text-xs sm:text-sm">Markets</TabsTrigger>
+            <TabsTrigger value="stocks" className="text-xs sm:text-sm">Stocks</TabsTrigger>
+            <TabsTrigger value="economy" className="text-xs sm:text-sm">Economy</TabsTrigger>
+            <TabsTrigger value="crypto" className="text-xs sm:text-sm">Crypto</TabsTrigger>
           </TabsList>
           
           <div className="space-y-4 max-h-[400px] overflow-y-auto pr-1">
