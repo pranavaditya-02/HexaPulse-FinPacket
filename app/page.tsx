@@ -7,6 +7,7 @@ import { RealTimeNewsFeed } from "@/components/real-time-news-feed"
 import { MarketHeatmapPreview } from "@/components/market-heatmap-preview"
 import { LiveNewsStream } from "@/components/live-news-stream"
 import { FilteredNewsFeed } from "@/components/filtered-news-feed"
+import { IndianMarketIndices } from "@/components/indian-market-indices"
 
 export default function HomePage() {
   return (
@@ -14,6 +15,9 @@ export default function HomePage() {
       <Navigation />
 
       <main className="container mx-auto px-4 sm:px-6 lg:px-8 py-4 sm:py-6 space-y-6 sm:space-y-8">
+        <div className="animate-slide-up" style={{ animationDelay: "200ms" }}>
+          <IndianMarketIndices />
+        </div>
 
          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 animate-slide-up" style={{ animationDelay: "350ms" }}>
           <LiveNewsStream />

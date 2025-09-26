@@ -189,6 +189,16 @@
     @apply flex flex-col sm:flex-row items-start sm:items-center gap-4;
   }
 
+  /* Hide scrollbar for webkit browsers */
+  .scrollbar-hide {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;  /* Chrome, Safari and Opera */
+  }
+
   @keyframes float {
     0%,
     100% {
