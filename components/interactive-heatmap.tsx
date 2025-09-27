@@ -5,7 +5,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
-import { TrendingUp, TrendingDown, Activity, RefreshCw } from "lucide-react"
+import { TrendingUp, TrendingDown, Activity, RefreshCw, IndianRupee } from "lucide-react"
 
 interface HeatmapData {
   symbol: string
@@ -20,104 +20,164 @@ interface HeatmapData {
 
 const generateHeatmapData = (): HeatmapData[] => [
   {
-    symbol: "AAPL",
-    name: "Apple Inc.",
-    sector: "Technology",
-    marketCap: 2800000,
-    performance: 2.4 + (Math.random() - 0.5) * 2,
-    volume: 45000000,
-    sentiment: "bullish",
-    volatility: 0.25,
-  },
-  {
-    symbol: "MSFT",
-    name: "Microsoft Corp.",
-    sector: "Technology",
-    marketCap: 2900000,
+    symbol: "RELIANCE",
+    name: "Reliance Industries Ltd.",
+    sector: "Energy & Petrochemicals",
+    marketCap: 1920000, // ₹19.2 Lakh Crore
     performance: 1.8 + (Math.random() - 0.5) * 2,
-    volume: 23000000,
-    sentiment: "bullish",
-    volatility: 0.22,
-  },
-  {
-    symbol: "GOOGL",
-    name: "Alphabet Inc.",
-    sector: "Technology",
-    marketCap: 1800000,
-    performance: -0.5 + (Math.random() - 0.5) * 2,
-    volume: 1200000,
-    sentiment: "neutral",
-    volatility: 0.28,
-  },
-  {
-    symbol: "TSLA",
-    name: "Tesla Inc.",
-    sector: "Consumer",
-    marketCap: 789000,
-    performance: -3.2 + (Math.random() - 0.5) * 2,
-    volume: 67000000,
-    sentiment: "bearish",
-    volatility: 0.45,
-  },
-  {
-    symbol: "NVDA",
-    name: "NVIDIA Corp.",
-    sector: "Technology",
-    marketCap: 2100000,
-    performance: 4.8 + (Math.random() - 0.5) * 2,
-    volume: 34000000,
-    sentiment: "bullish",
-    volatility: 0.35,
-  },
-  {
-    symbol: "JPM",
-    name: "JPMorgan Chase",
-    sector: "Finance",
-    marketCap: 450000,
-    performance: 1.6 + (Math.random() - 0.5) * 2,
-    volume: 12000000,
+    volume: 45000000,
     sentiment: "bullish",
     volatility: 0.18,
   },
   {
-    symbol: "JNJ",
-    name: "Johnson & Johnson",
-    sector: "Healthcare",
-    marketCap: 420000,
-    performance: 0.8 + (Math.random() - 0.5) * 2,
-    volume: 8000000,
+    symbol: "TCS",
+    name: "Tata Consultancy Services",
+    sector: "Information Technology",
+    marketCap: 1500000, // ₹15 Lakh Crore
+    performance: -0.8 + (Math.random() - 0.5) * 2,
+    volume: 23000000,
     sentiment: "neutral",
     volatility: 0.15,
   },
   {
-    symbol: "XOM",
-    name: "Exxon Mobil",
-    sector: "Energy",
-    marketCap: 380000,
-    performance: -1.2 + (Math.random() - 0.5) * 2,
-    volume: 15000000,
-    sentiment: "bearish",
-    volatility: 0.32,
+    symbol: "HDFCBANK",
+    name: "HDFC Bank Ltd.",
+    sector: "Banking & Finance",
+    marketCap: 1350000, // ₹13.5 Lakh Crore
+    performance: 2.1 + (Math.random() - 0.5) * 2,
+    volume: 32000000,
+    sentiment: "bullish",
+    volatility: 0.22,
   },
   {
-    symbol: "WMT",
-    name: "Walmart Inc.",
-    sector: "Consumer",
-    marketCap: 520000,
-    performance: 0.3 + (Math.random() - 0.5) * 2,
-    volume: 9000000,
+    symbol: "BHARTIARTL",
+    name: "Bharti Airtel Ltd.",
+    sector: "Telecom",
+    marketCap: 920000, // ₹9.2 Lakh Crore
+    performance: 3.2 + (Math.random() - 0.5) * 2,
+    volume: 28000000,
+    sentiment: "bullish",
+    volatility: 0.28,
+  },
+  {
+    symbol: "ICICIBANK",
+    name: "ICICI Bank Ltd.",
+    sector: "Banking & Finance",
+    marketCap: 890000, // ₹8.9 Lakh Crore
+    performance: 1.5 + (Math.random() - 0.5) * 2,
+    volume: 35000000,
+    sentiment: "bullish",
+    volatility: 0.25,
+  },
+  {
+    symbol: "INFY",
+    name: "Infosys Ltd.",
+    sector: "Information Technology",
+    marketCap: 760000, // ₹7.6 Lakh Crore
+    performance: -1.2 + (Math.random() - 0.5) * 2,
+    volume: 18000000,
+    sentiment: "bearish",
+    volatility: 0.20,
+  },
+  {
+    symbol: "ITC",
+    name: "ITC Ltd.",
+    sector: "FMCG & Consumer",
+    marketCap: 570000, // ₹5.7 Lakh Crore
+    performance: 0.8 + (Math.random() - 0.5) * 2,
+    volume: 12000000,
     sentiment: "neutral",
     volatility: 0.12,
   },
   {
-    symbol: "V",
-    name: "Visa Inc.",
-    sector: "Finance",
-    marketCap: 480000,
-    performance: 2.1 + (Math.random() - 0.5) * 2,
-    volume: 6000000,
+    symbol: "SBIN",
+    name: "State Bank of India",
+    sector: "Banking & Finance",
+    marketCap: 520000, // ₹5.2 Lakh Crore
+    performance: 2.8 + (Math.random() - 0.5) * 2,
+    volume: 45000000,
     sentiment: "bullish",
-    volatility: 0.2,
+    volatility: 0.35,
+  },
+  {
+    symbol: "LT",
+    name: "Larsen & Toubro Ltd.",
+    sector: "Infrastructure & Engineering",
+    marketCap: 500000, // ₹5 Lakh Crore
+    performance: 1.2 + (Math.random() - 0.5) * 2,
+    volume: 8000000,
+    sentiment: "bullish",
+    volatility: 0.24,
+  },
+  {
+    symbol: "HINDUNILVR",
+    name: "Hindustan Unilever Ltd.",
+    sector: "FMCG & Consumer",
+    marketCap: 480000, // ₹4.8 Lakh Crore
+    performance: 0.5 + (Math.random() - 0.5) * 2,
+    volume: 6000000,
+    sentiment: "neutral",
+    volatility: 0.14,
+  },
+  {
+    symbol: "MARUTI",
+    name: "Maruti Suzuki India Ltd.",
+    sector: "Automobiles",
+    marketCap: 350000, // ₹3.5 Lakh Crore
+    performance: 4.2 + (Math.random() - 0.5) * 2,
+    volume: 15000000,
+    sentiment: "bullish",
+    volatility: 0.32,
+  },
+  {
+    symbol: "ASIANPAINT",
+    name: "Asian Paints Ltd.",
+    sector: "Paints & Chemicals",
+    marketCap: 280000, // ₹2.8 Lakh Crore
+    performance: -0.3 + (Math.random() - 0.5) * 2,
+    volume: 4000000,
+    sentiment: "neutral",
+    volatility: 0.18,
+  },
+  {
+    symbol: "BAJFINANCE",
+    name: "Bajaj Finance Ltd.",
+    sector: "NBFC",
+    marketCap: 420000, // ₹4.2 Lakh Crore
+    performance: -2.1 + (Math.random() - 0.5) * 2,
+    volume: 22000000,
+    sentiment: "bearish",
+    volatility: 0.42,
+  },
+  {
+    symbol: "WIPRO",
+    name: "Wipro Ltd.",
+    sector: "Information Technology",
+    marketCap: 320000, // ₹3.2 Lakh Crore
+    performance: -0.9 + (Math.random() - 0.5) * 2,
+    volume: 12000000,
+    sentiment: "neutral",
+    volatility: 0.22,
+  },
+  {
+    symbol: "SUNPHARMA",
+    name: "Sun Pharmaceutical Industries",
+    sector: "Pharmaceuticals",
+    marketCap: 290000, // ₹2.9 Lakh Crore
+    performance: 1.8 + (Math.random() - 0.5) * 2,
+    volume: 9000000,
+    sentiment: "bullish",
+    volatility: 0.26,
+  },
+  {
+    symbol: "ADANIPORTS",
+    name: "Adani Ports & SEZ Ltd.",
+    sector: "Infrastructure & Logistics",
+    marketCap: 310000, // ₹3.1 Lakh Crore
+    performance: 5.6 + (Math.random() - 0.5) * 3,
+    volume: 38000000,
+    sentiment: "bullish",
+    volatility: 0.45,
   },
 ]
 
@@ -133,8 +193,8 @@ export function InteractiveHeatmap() {
 
   const refreshData = async () => {
     setIsRefreshing(true)
-    // Simulate API call
-    await new Promise((resolve) => setTimeout(resolve, 1000))
+    // Simulate API call with realistic delay
+    await new Promise((resolve) => setTimeout(resolve, 1500))
     setData(generateHeatmapData())
     setIsRefreshing(false)
   }
@@ -145,11 +205,11 @@ export function InteractiveHeatmap() {
 
     switch (metric) {
       case "performance":
-        intensity = Math.min(Math.abs(value) / 5, 1)
+        intensity = Math.min(Math.abs(value) / 6, 1) // Adjusted for Indian market volatility
         isPositive = value > 0
         break
       case "volume":
-        intensity = Math.min(value / 100000000, 1)
+        intensity = Math.min(value / 50000000, 1) // Adjusted for Indian market volumes
         isPositive = true
         break
       case "volatility":
@@ -162,25 +222,25 @@ export function InteractiveHeatmap() {
     }
 
     if (metric === "volume") {
-      return `rgba(75, 192, 192, ${0.2 + intensity * 0.6})`
+      return `rgba(59, 130, 246, ${0.2 + intensity * 0.6})` // Blue for volume
     }
 
     if (metric === "volatility") {
-      return `rgba(255, 193, 7, ${0.2 + intensity * 0.6})`
+      return `rgba(245, 158, 11, ${0.2 + intensity * 0.6})` // Amber for volatility
     }
 
     // Performance colors
     if (isPositive) {
-      return `rgba(46, 204, 113, ${0.2 + intensity * 0.6})` // Green
+      return `rgba(34, 197, 94, ${0.2 + intensity * 0.6})` // Green for positive
     } else {
-      return `rgba(231, 76, 60, ${0.2 + intensity * 0.6})` // Red
+      return `rgba(239, 68, 68, ${0.2 + intensity * 0.6})` // Red for negative
     }
   }
 
   const getSize = (marketCap: number) => {
-    const minSize = 80
-    const maxSize = 200
-    const normalizedCap = Math.log(marketCap) / Math.log(3000000) // Normalize against max cap
+    const minSize = 70
+    const maxSize = 180
+    const normalizedCap = Math.log(marketCap) / Math.log(2000000) // Normalize against max Indian market cap
     return Math.max(minSize, Math.min(maxSize, minSize + normalizedCap * (maxSize - minSize)))
   }
 
@@ -197,20 +257,25 @@ export function InteractiveHeatmap() {
     }
   }
 
+  const formatMarketCap = (marketCap: number) => {
+    return `₹${(marketCap / 100000).toFixed(1)}L Cr` // Convert to Lakh Crores
+  }
+
   return (
     <Card className="glass">
       <CardHeader>
         <CardTitle className="flex items-center justify-between">
           <div className="flex items-center space-x-2">
             <Activity className="w-5 h-5 text-primary" />
-            <span>Interactive Market Heatmap</span>
+            <span>Indian Market Heatmap</span>
           </div>
           <div className="flex items-center space-x-2">
             <Button variant="outline" size="sm" onClick={refreshData} disabled={isRefreshing}>
               <RefreshCw className={`w-4 h-4 ${isRefreshing ? "animate-spin" : ""}`} />
             </Button>
             <Badge variant="outline" className="text-xs">
-              Live Data
+              <IndianRupee className="w-3 h-3 mr-1" />
+              NSE/BSE Data
             </Badge>
           </div>
         </CardTitle>
@@ -238,8 +303,8 @@ export function InteractiveHeatmap() {
           </div>
 
           <TabsContent value={selectedMetric} className="mt-6">
-            <div className="relative min-h-[400px] p-4 rounded-lg glass-strong overflow-hidden">
-              <div className="flex flex-wrap gap-2 justify-center items-center">
+            <div className="relative min-h-[500px] p-4 rounded-lg glass-strong overflow-hidden">
+              <div className="flex flex-wrap gap-3 justify-center items-center">
                 {filteredData.map((item) => {
                   const size = getSize(item.marketCap)
                   const color = getColor(item[selectedMetric], selectedMetric)
@@ -248,43 +313,63 @@ export function InteractiveHeatmap() {
                   return (
                     <div
                       key={item.symbol}
-                      className="relative group cursor-pointer transition-all duration-300 hover:scale-110 hover:z-10"
+                      className="relative group cursor-pointer transition-all duration-300 hover:scale-110 hover:z-10 hover:shadow-lg"
                       style={{
                         width: `${size}px`,
                         height: `${size}px`,
                         backgroundColor: color,
-                        borderRadius: "8px",
-                        border: "2px solid rgba(255, 255, 255, 0.1)",
+                        borderRadius: "12px",
+                        border: "2px solid rgba(255, 255, 255, 0.15)",
                       }}
                     >
                       <div className="absolute inset-0 flex flex-col items-center justify-center p-2 text-center">
-                        <div className="font-bold text-sm">{item.symbol}</div>
-                        <div className="text-xs opacity-80">{formatValue(value, selectedMetric)}</div>
+                        <div className="font-bold text-sm text-white drop-shadow-md">{item.symbol}</div>
+                        <div className="text-xs opacity-90 text-white drop-shadow-sm">
+                          {formatValue(value, selectedMetric)}
+                        </div>
                         {selectedMetric === "performance" && (
                           <div className="flex items-center mt-1">
-                            {value >= 0 ? <TrendingUp className="w-3 h-3" /> : <TrendingDown className="w-3 h-3" />}
+                            {value >= 0 ? (
+                              <TrendingUp className="w-3 h-3 text-white drop-shadow-sm" />
+                            ) : (
+                              <TrendingDown className="w-3 h-3 text-white drop-shadow-sm" />
+                            )}
                           </div>
                         )}
                       </div>
 
-                      {/* Tooltip */}
-                      <div className="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 px-3 py-2 bg-card border border-border rounded-lg shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none z-20 min-w-max">
-                        <div className="text-sm font-semibold">{item.name}</div>
-                        <div className="text-xs text-muted-foreground">{item.sector}</div>
-                        <div className="text-xs mt-1">
-                          <div>Performance: {formatValue(item.performance, "performance")}</div>
-                          <div>Volume: {formatValue(item.volume, "volume")}</div>
-                          <div>Volatility: {formatValue(item.volatility, "volatility")}</div>
-                          <div>Market Cap: ${(item.marketCap / 1000).toFixed(0)}B</div>
+                      {/* Enhanced Tooltip */}
+                      <div className="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-3 px-4 py-3 bg-card border border-border rounded-lg shadow-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none z-30 min-w-max backdrop-blur-sm">
+                        <div className="text-sm font-semibold text-foreground">{item.name}</div>
+                        <div className="text-xs text-muted-foreground mb-2">{item.sector}</div>
+                        <div className="text-xs space-y-1">
+                          <div className="flex justify-between">
+                            <span>Performance:</span>
+                            <span className={value >= 0 ? "text-green-400" : "text-red-400"}>
+                              {formatValue(item.performance, "performance")}
+                            </span>
+                          </div>
+                          <div className="flex justify-between">
+                            <span>Volume:</span>
+                            <span>{formatValue(item.volume, "volume")}</span>
+                          </div>
+                          <div className="flex justify-between">
+                            <span>Volatility:</span>
+                            <span>{formatValue(item.volatility, "volatility")}</span>
+                          </div>
+                          <div className="flex justify-between">
+                            <span>Market Cap:</span>
+                            <span>{formatMarketCap(item.marketCap)}</span>
+                          </div>
                         </div>
                         <Badge
                           variant="outline"
-                          className={`mt-1 text-xs ${
+                          className={`mt-2 text-xs ${
                             item.sentiment === "bullish"
-                              ? "border-accent text-accent"
+                              ? "border-green-400 text-green-400 bg-green-400/10"
                               : item.sentiment === "bearish"
-                                ? "border-destructive text-destructive"
-                                : "border-secondary text-secondary"
+                                ? "border-red-400 text-red-400 bg-red-400/10"
+                                : "border-yellow-400 text-yellow-400 bg-yellow-400/10"
                           }`}
                         >
                           {item.sentiment.toUpperCase()}
@@ -296,13 +381,13 @@ export function InteractiveHeatmap() {
               </div>
             </div>
 
-            {/* Legend */}
-            <div className="flex items-center justify-center space-x-6 mt-4 text-xs text-muted-foreground">
+            {/* Enhanced Legend */}
+            <div className="flex items-center justify-center space-x-8 mt-6 text-xs text-muted-foreground">
               <div className="flex items-center space-x-2">
-                <div className="w-4 h-4 rounded bg-accent/40"></div>
+                <div className="w-4 h-4 rounded bg-green-400/60"></div>
                 <span>
                   {selectedMetric === "performance"
-                    ? "Positive"
+                    ? "Positive Performance"
                     : selectedMetric === "volume"
                       ? "High Volume"
                       : "High Volatility"}
@@ -310,12 +395,47 @@ export function InteractiveHeatmap() {
               </div>
               {selectedMetric === "performance" && (
                 <div className="flex items-center space-x-2">
-                  <div className="w-4 h-4 rounded bg-destructive/40"></div>
-                  <span>Negative</span>
+                  <div className="w-4 h-4 rounded bg-red-400/60"></div>
+                  <span>Negative Performance</span>
                 </div>
               )}
               <div className="flex items-center space-x-2">
-                <span>Size = Market Cap</span>
+                <div className="w-2 h-2 rounded-full bg-muted-foreground"></div>
+                <span>Size ∝ Market Cap</span>
+              </div>
+              <div className="flex items-center space-x-2">
+                <IndianRupee className="w-3 h-3" />
+                <span>Values in ₹</span>
+              </div>
+            </div>
+
+            {/* Market Summary */}
+            <div className="mt-6 p-4 bg-muted/20 rounded-lg">
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-sm">
+                <div className="text-center">
+                  <div className="text-green-400 font-semibold">
+                    {filteredData.filter(item => item.performance > 0).length}
+                  </div>
+                  <div className="text-muted-foreground">Gainers</div>
+                </div>
+                <div className="text-center">
+                  <div className="text-red-400 font-semibold">
+                    {filteredData.filter(item => item.performance < 0).length}
+                  </div>
+                  <div className="text-muted-foreground">Losers</div>
+                </div>
+                <div className="text-center">
+                  <div className="font-semibold">
+                    {formatMarketCap(filteredData.reduce((sum, item) => sum + item.marketCap, 0))}
+                  </div>
+                  <div className="text-muted-foreground">Total Market Cap</div>
+                </div>
+                <div className="text-center">
+                  <div className="font-semibold">
+                    {(filteredData.reduce((sum, item) => sum + item.volume, 0) / 1000000000).toFixed(1)}B
+                  </div>
+                  <div className="text-muted-foreground">Total Volume</div>
+                </div>
               </div>
             </div>
           </TabsContent>

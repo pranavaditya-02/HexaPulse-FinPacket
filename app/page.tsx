@@ -31,11 +31,11 @@ export default function HomePage() {
           <AdvancedAnalytics />
         </div>
 
-        <div className="grid grid-cols-1 xl:grid-cols-3 gap-6 animate-slide-up" style={{ animationDelay: "500ms" }}>
+        {/* <div className="grid grid-cols-1 xl:grid-cols-3 gap-6 animate-slide-up" style={{ animationDelay: "500ms" }}>
           <div className="xl:col-span-2">
             <QuickStats />
           </div>
-        </div>
+        </div> */}
 
         <div className="animate-slide-up" style={{ animationDelay: "600ms" }}>
           <MarketHeatmapPreview />

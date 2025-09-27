@@ -1,0 +1,65 @@
+[tool.poetry]
+name = "llm-app"
+version = "0.3.6"
+description = "LLM-App is a library for creating responsive AI applications leveraging OpenAI/Hugging Face APIs to provide responses to user queries based on live data sources. Build your own LLM application in 30 lines of code, no vector database required."
+authors = [
+    "Jan Chorowski <janek@pathway.com>",
+    "Kamil Piechowiak <kamil@pathway.com>",
+    "Jakub Kowalski <kuba@pathway.com>",
+    "Michał Bartoszkiewicz <embe@pathway.com>",
+    "Mohamed Malhou <mohamed@pathway.com>",
+    "Sergey Kulik <sergey@pathway.com>",
+    "Adrian Kosowski <adrian@pathway.com>",
+    "Mateusz Lewandowski <mateusz@pathway.com>",
+    "Olivier Ruas <olivier@pathway.com>",
+]
+license = "MIT"
+readme = "README.md"
+keywords = ["Pathway", "LLM"]
+package-mode = false
+
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Programming Language :: Python :: Implementation :: CPython",
+    "License :: OSI Approved :: MIT License",
+]
+
+[tool.poetry.urls]
+"Homepage" = "https://github.com/pathwaycom/llm-app"
+"Source Code" = "https://github.com/pathwaycom/llm-app"
+
+[tool.poetry.dependencies]
+python = ">=3.10,<3.13"
+pathway = "^0.12.0"
+
+[tool.poetry.group.linters]
+optional = true
+
+[tool.poetry.group.linters.dependencies]
+black = "^24.2.0"
+isort = "^5.13.2"
+mypy = "~1.10.0"
+flake8 = "~7.0.0"
+pytest = "^8.0.2"
+types-requests = "^2.31.0"
+types-PyYAML = "^6.0.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+target-version = ["py310", "py311"]
+
+[tool.isort]
+profile = "black"
+
+[tool.mypy]
+python_version = "3.10"
+exclude = ["examples/data", "examples/pipelines/adaptive-rag", "examples/pipelines/private-rag", "examples/pipelines/demo-document-indexing"]
+ignore_missing_imports = true
+check_untyped_defs = true
+warn_redundant_casts = true
+warn_unused_ignores = true
+strict_equality = true

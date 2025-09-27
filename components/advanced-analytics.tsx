@@ -6,24 +6,75 @@ import { Badge } from "@/components/ui/badge"
 import { Progress } from "@/components/ui/progress"
 import { useLanguage } from "@/components/language-provider"
 import { ResponsiveContainer, PieChart, Pie, Cell } from "recharts"
-import { TrendingUp, TrendingDown, Brain, Zap, Target, Shield, AlertCircle } from "lucide-react"
+import { TrendingUp, TrendingDown, Brain, Zap, Target, Shield, AlertCircle, IndianRupee } from "lucide-react"
 
 const sentimentData = [
-  { name: "Tech", value: 35, sentiment: 0.8 },
-  { name: "Finance", value: 25, sentiment: 0.6 },
-  { name: "Healthcare", value: 20, sentiment: 0.7 },
-  { name: "Energy", value: 12, sentiment: -0.3 },
-  { name: "Retail", value: 8, sentiment: 0.2 },
+  { name: "Banking & Finance", value: 32, sentiment: 0.7 },
+  { name: "Information Technology", value: 24, sentiment: 0.6 },
+  { name: "Energy & Petrochemicals", value: 18, sentiment: -0.2 },
+  { name: "FMCG & Consumer", value: 12, sentiment: 0.4 },
+  { name: "Automobiles", value: 8, sentiment: 0.8 },
+  { name: "Pharmaceuticals", value: 6, sentiment: 0.5 },
 ]
 
 const aiPredictions = [
-  { symbol: "AAPL", prediction: "Bullish", confidence: 87, timeframe: "1W", target: "+5.2%" },
-  { symbol: "TSLA", prediction: "Bearish", confidence: 73, timeframe: "3D", target: "-3.1%" },
-  { symbol: "NVDA", prediction: "Bullish", confidence: 92, timeframe: "2W", target: "+8.7%" },
-  { symbol: "MSFT", prediction: "Neutral", confidence: 65, timeframe: "1W", target: "+1.2%" },
+  { 
+    symbol: "RELIANCE", 
+    name: "Reliance Industries",
+    prediction: "Bullish", 
+    confidence: 89, 
+    timeframe: "2W", 
+    target: "+6.8%",
+    sector: "Energy"
+  },
+  { 
+    symbol: "TCS", 
+    name: "Tata Consultancy Services",
+    prediction: "Neutral", 
+    confidence: 72, 
+    timeframe: "1W", 
+    target: "+1.5%",
+    sector: "IT"
+  },
+  { 
+    symbol: "HDFCBANK", 
+    name: "HDFC Bank",
+    prediction: "Bullish", 
+    confidence: 91, 
+    timeframe: "3W", 
+    target: "+7.2%",
+    sector: "Banking"
+  },
+  { 
+    symbol: "BHARTIARTL", 
+    name: "Bharti Airtel",
+    prediction: "Bullish", 
+    confidence: 85, 
+    timeframe: "2W", 
+    target: "+5.4%",
+    sector: "Telecom"
+  },
+  { 
+    symbol: "MARUTI", 
+    name: "Maruti Suzuki",
+    prediction: "Bullish", 
+    confidence: 87, 
+    timeframe: "4W", 
+    target: "+8.3%",
+    sector: "Auto"
+  },
+  { 
+    symbol: "INFY", 
+    name: "Infosys",
+    prediction: "Bearish", 
+    confidence: 76, 
+    timeframe: "1W", 
+    target: "-2.8%",
+    sector: "IT"
+  },
 ]
 
-const COLORS = ["#4169E1", "#DBBC58", "#2ECC71", "#E74C3C", "#9B59B6"]
+const COLORS = ["#4169E1", "#DBBC58", "#2ECC71", "#E74C3C", "#9B59B6", "#FF6B35"]
 
 export function AdvancedAnalytics() {
   const [marketScore, setMarketScore] = useState(0)
@@ -31,7 +82,7 @@ export function AdvancedAnalytics() {
 
   useEffect(() => {
     // Animate market score
-    const timer = setTimeout(() => setMarketScore(87), 500)
+    const timer = setTimeout(() => setMarketScore(74), 500)
     return () => clearTimeout(timer)
   }, [])
 
@@ -45,7 +96,7 @@ export function AdvancedAnalytics() {
             AI Market Sentiment
             <Badge variant="secondary" className="text-xs">
               <Zap className="w-3 h-3 mr-1" />
-              Real-time
+              NSE/BSE Live
             </Badge>
           </CardTitle>
         </CardHeader>
@@ -77,15 +128,20 @@ export function AdvancedAnalytics() {
               </PieChart>
             </ResponsiveContainer>
 
-            <div className="grid grid-cols-2 gap-2">
+            <div className="grid grid-cols-1 gap-2">
               {sentimentData.map((sector, index) => (
-                <div key={sector.name} className="flex items-center gap-2 text-xs">
-                  <div className="w-3 h-3 rounded-full" style={{ backgroundColor: COLORS[index] }} />
-                  <span>{sector.name}</span>
-                  <Badge variant={sector.sentiment > 0 ? "default" : "destructive"} className="text-xs">
-                    {sector.sentiment > 0 ? "+" : ""}
-                    {(sector.sentiment * 100).toFixed(0)}%
-                  </Badge>
+                <div key={sector.name} className="flex items-center justify-between text-xs">
+                  <div className="flex items-center gap-2">
+                    <div className="w-3 h-3 rounded-full" style={{ backgroundColor: COLORS[index] }} />
+                    <span className="font-medium">{sector.name}</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <span className="text-muted-foreground">{sector.value}%</span>
+                    <Badge variant={sector.sentiment > 0 ? "default" : "destructive"} className="text-xs">
+                      {sector.sentiment > 0 ? "+" : ""}
+                      {(sector.sentiment * 100).toFixed(0)}%
+                    </Badge>
+                  </div>
                 </div>
               ))}
             </div>
@@ -98,7 +154,7 @@ export function AdvancedAnalytics() {
         <CardHeader>
           <CardTitle className="flex items-center gap-2">
             <Target className="h-5 w-5 text-accent animate-float" />
-            AI Predictions
+            AI Stock Predictions
             <Badge variant="outline" className="text-xs">
               <AlertCircle className="w-3 h-3 mr-1" />
               High Accuracy
@@ -106,7 +162,7 @@ export function AdvancedAnalytics() {
           </CardTitle>
         </CardHeader>
         <CardContent>
-          <div className="space-y-3">
+          <div className="space-y-3 max-h-[300px] overflow-y-auto">
             {aiPredictions.map((pred, index) => (
               <div
                 key={pred.symbol}
@@ -114,15 +170,18 @@ export function AdvancedAnalytics() {
                 style={{ animationDelay: `${index * 100}ms` }}
               >
                 <div className="flex items-center gap-3">
-                  <div className="flex items-center gap-2">
-                    <span className="font-mono font-bold">{pred.symbol}</span>
-                    {pred.prediction === "Bullish" ? (
-                      <TrendingUp className="h-4 w-4 text-accent" />
-                    ) : pred.prediction === "Bearish" ? (
-                      <TrendingDown className="h-4 w-4 text-destructive" />
-                    ) : (
-                      <Shield className="h-4 w-4 text-muted-foreground" />
-                    )}
+                  <div className="flex flex-col">
+                    <div className="flex items-center gap-2">
+                      <span className="font-mono font-bold text-sm">{pred.symbol}</span>
+                      {pred.prediction === "Bullish" ? (
+                        <TrendingUp className="h-4 w-4 text-green-400" />
+                      ) : pred.prediction === "Bearish" ? (
+                        <TrendingDown className="h-4 w-4 text-red-400" />
+                      ) : (
+                        <Shield className="h-4 w-4 text-yellow-400" />
+                      )}
+                    </div>
+                    <span className="text-xs text-muted-foreground">{pred.name}</span>
                   </div>
                   <Badge
                     variant={
@@ -143,9 +202,27 @@ export function AdvancedAnalytics() {
                   <div className="text-xs text-muted-foreground">
                     {pred.confidence}% • {pred.timeframe}
                   </div>
+                  <div className="text-xs text-muted-foreground">
+                    {pred.sector}
+                  </div>
                 </div>
               </div>
             ))}
+          </div>
+
+          {/* Market Insights */}
+          <div className="mt-4 p-3 bg-primary/5 border border-primary/20 rounded-lg">
+            <div className="flex items-start gap-2">
+              <IndianRupee className="w-4 h-4 text-primary mt-0.5 flex-shrink-0" />
+              <div className="text-xs">
+                <div className="font-medium text-primary mb-1">Market Insight</div>
+                <div className="text-muted-foreground">
+                  Banking sector showing strong momentum with HDFC Bank leading. 
+                  IT sector facing headwinds due to global uncertainties. 
+                  Auto sector benefiting from festive season demand.
+                </div>
+              </div>
+            </div>
           </div>
         </CardContent>
       </Card>
