@@ -1,0 +1,2279 @@
+1
+00:00:00,640 --> 00:00:02,320
+Welcome to Yahoo Finance's flagship
+
+2
+00:00:02,320 --> 00:00:03,840
+show, The Morning Brief. I'm Julie
+
+3
+00:00:03,840 --> 00:00:05,600
+Hyman. Let's get to the three things you
+
+4
+00:00:05,600 --> 00:00:07,520
+need to know today. First up, US stock
+
+5
+00:00:07,520 --> 00:00:09,440
+futures rebounding this morning after
+
+6
+00:00:09,440 --> 00:00:11,360
+the major averages sold off in Tuesday's
+
+7
+00:00:11,360 --> 00:00:13,360
+trade. Despite the modest pullback,
+
+8
+00:00:13,360 --> 00:00:15,040
+stocks are still trading near record
+
+9
+00:00:15,040 --> 00:00:18,560
+highs. The S&P 500 has now gone 107
+
+10
+00:00:18,560 --> 00:00:21,039
+sessions without a drop of at least 2%.
+
+11
+00:00:21,039 --> 00:00:23,199
+That's its longest stretch since July
+
+12
+00:00:23,199 --> 00:00:26,160
+2024. Tech stocks bore the brunt of
+
+13
+00:00:26,160 --> 00:00:27,439
+selling on Tuesday, but they are
+
+14
+00:00:27,439 --> 00:00:29,199
+rebounding amid some renewed AI
+
+15
+00:00:29,199 --> 00:00:31,359
+optimism. Some of that is coming from
+
+16
+00:00:31,359 --> 00:00:33,280
+Micron earnings. The memory chipmaker
+
+17
+00:00:33,280 --> 00:00:35,440
+gave an upbeat outlook driven by demand
+
+18
+00:00:35,440 --> 00:00:37,760
+for AI equipment. Shares of the company
+
+19
+00:00:37,760 --> 00:00:39,760
+have nearly doubled this year and the
+
+20
+00:00:39,760 --> 00:00:42,079
+latest results are further bolstering
+
+21
+00:00:42,079 --> 00:00:44,399
+investor optimism. We're seeing a little
+
+22
+00:00:44,399 --> 00:00:46,640
+bit of wavering in the shares after that
+
+23
+00:00:46,640 --> 00:00:48,640
+big run we've seen this year. And
+
+24
+00:00:48,640 --> 00:00:51,039
+Alibaba soaring to a 4-year high after
+
+25
+00:00:51,039 --> 00:00:54,239
+unveiling its AI plans. CEO Eddie Woo
+
+26
+00:00:54,239 --> 00:00:55,920
+said the company will ramp up AI
+
+27
+00:00:55,920 --> 00:00:58,160
+spending above an original target of $50
+
+28
+00:00:58,160 --> 00:01:00,399
+billion. The e-commerce giant made the
+
+29
+00:01:00,399 --> 00:01:02,079
+announcement at its annual technology
+
+30
+00:01:02,079 --> 00:01:04,320
+conference. It also revealed a software
+
+31
+00:01:04,320 --> 00:01:08,550
+partnership with, of course, Nvidia.
+
+32
+00:01:08,550 --> 00:01:16,400
+[Music]
+
+33
+00:01:16,400 --> 00:01:18,159
+Let's get a check in on stock futures
+
+34
+00:01:18,159 --> 00:01:19,439
+here this morning. So, all three major
+
+35
+00:01:19,439 --> 00:01:21,840
+averages pointing to a slightly higher
+
+36
+00:01:21,840 --> 00:01:24,240
+open here. We've got the Nasdaq leading
+
+37
+00:01:24,240 --> 00:01:26,720
+those early gains, indicating a rise of
+
+38
+00:01:26,720 --> 00:01:28,880
+about a quarter percent at the open with
+
+39
+00:01:28,880 --> 00:01:31,439
+the Dow and the S&P 500 participating as
+
+40
+00:01:31,439 --> 00:01:33,600
+well. Let's dig into our top stories of
+
+41
+00:01:33,600 --> 00:01:35,360
+the day. Futures are indeed higher as
+
+42
+00:01:35,360 --> 00:01:37,439
+stocks look to recover losses from that
+
+43
+00:01:37,439 --> 00:01:40,079
+prior session. Plus, JPAL keeping his
+
+44
+00:01:40,079 --> 00:01:42,079
+options open as he warns of the Federal
+
+45
+00:01:42,079 --> 00:01:44,320
+Reserve's quote challenging situation
+
+46
+00:01:44,320 --> 00:01:46,880
+and Alibaba soaring as it bets big on
+
+47
+00:01:46,880 --> 00:01:48,479
+AI. Joining me now, senior reporter
+
+48
+00:01:48,479 --> 00:01:50,479
+Brook Depal live at the NASDAQ, Federal
+
+49
+00:01:50,479 --> 00:01:51,600
+Reserve correspondent Jennifer
+
+50
+00:01:51,600 --> 00:01:53,520
+Sharonburgger and Morning Brief Market
+
+51
+00:01:53,520 --> 00:01:56,240
+Sunrise host Ramzan Carmali. Um, let's
+
+52
+00:01:56,240 --> 00:01:57,600
+start with you, Brooke. And looking at
+
+53
+00:01:57,600 --> 00:02:00,079
+this backdrop for stocks where yes, we
+
+54
+00:02:00,079 --> 00:02:02,399
+saw some wavering yesterday, but now
+
+55
+00:02:02,399 --> 00:02:04,159
+perhaps a resumption of that push to
+
+56
+00:02:04,159 --> 00:02:06,479
+highs,
+
+57
+00:02:06,479 --> 00:02:08,080
+Julie, we were on quite the hot streak
+
+58
+00:02:08,080 --> 00:02:09,920
+there. Record setting hot streak,
+
+59
+00:02:09,920 --> 00:02:11,760
+especially heading into Monday's close.
+
+60
+00:02:11,760 --> 00:02:14,400
+And after we did see that momentum, the
+
+61
+00:02:14,400 --> 00:02:16,640
+third straight day of record high closes
+
+62
+00:02:16,640 --> 00:02:18,720
+on Tuesday, we did see all three major
+
+63
+00:02:18,720 --> 00:02:22,160
+indices slide slowly uh slightly lower
+
+64
+00:02:22,160 --> 00:02:24,000
+uh than those record highs all closing
+
+65
+00:02:24,000 --> 00:02:26,480
+in the group uh the red rather on
+
+66
+00:02:26,480 --> 00:02:28,480
+Tuesday afternoon. And now you could see
+
+67
+00:02:28,480 --> 00:02:31,760
+here we are gaining some momentum this
+
+68
+00:02:31,760 --> 00:02:34,480
+morning largely led by Micron largely
+
+69
+00:02:34,480 --> 00:02:37,360
+led by this AI trade rally and some
+
+70
+00:02:37,360 --> 00:02:38,879
+renewed optimism that the Federal
+
+71
+00:02:38,879 --> 00:02:42,160
+Reserve will cut interest rates in this
+
+72
+00:02:42,160 --> 00:02:44,160
+year. We did hear from Fed chair Jerome
+
+73
+00:02:44,160 --> 00:02:46,959
+Pal on Tuesday and he did suggest that
+
+74
+00:02:46,959 --> 00:02:49,760
+equities were highly valued right now
+
+75
+00:02:49,760 --> 00:02:51,440
+and so investors really tried to digest
+
+76
+00:02:51,440 --> 00:02:53,519
+that. that led to a lower close on
+
+77
+00:02:53,519 --> 00:02:54,720
+Tuesday and now we're seeing some
+
+78
+00:02:54,720 --> 00:02:56,480
+renewed optimism to kick off this
+
+79
+00:02:56,480 --> 00:02:57,920
+Wednesday's trading session.
+
+80
+00:02:57,920 --> 00:02:59,040
+>> Yeah. And let's talk about some of the
+
+81
+00:02:59,040 --> 00:03:01,120
+sources of that optimism, guys. Um
+
+82
+00:03:01,120 --> 00:03:03,360
+Ramson, you know, there has been this
+
+83
+00:03:03,360 --> 00:03:06,720
+interesting sort of stutter start, if
+
+84
+00:03:06,720 --> 00:03:08,640
+you will, with AI sentiment, right?
+
+85
+00:03:08,640 --> 00:03:09,920
+Where people get very excited and then
+
+86
+00:03:09,920 --> 00:03:11,040
+they're like, "Wait a minute, is it
+
+87
+00:03:11,040 --> 00:03:12,000
+really that big of a deal?" And then
+
+88
+00:03:12,000 --> 00:03:13,200
+something new happens and they get
+
+89
+00:03:13,200 --> 00:03:15,519
+excited again. And this morning, Alibaba
+
+90
+00:03:15,519 --> 00:03:17,599
+seems to be the upward catalyst, or at
+
+91
+00:03:17,599 --> 00:03:20,000
+least one of them.
+
+92
+00:03:20,000 --> 00:03:22,879
+It c certainly is. So the the Chinese
+
+93
+00:03:22,879 --> 00:03:26,640
+tech giant, it's unveiled a sweeping AI
+
+94
+00:03:26,640 --> 00:03:29,120
+push and it'll be partnering with Nvidia
+
+95
+00:03:29,120 --> 00:03:31,120
+to build cuttingedge AI infrastructure
+
+96
+00:03:31,120 --> 00:03:34,080
+and rolling out its Quen 3 Max language
+
+97
+00:03:34,080 --> 00:03:36,959
+model. Now investors love the news. The
+
+98
+00:03:36,959 --> 00:03:38,959
+Hong Kong listed stock jumped close to
+
+99
+00:03:38,959 --> 00:03:41,120
+more than 9% high. In fact, at one point
+
+100
+00:03:41,120 --> 00:03:43,120
+during the day, it hit a 4year intraday
+
+101
+00:03:43,120 --> 00:03:45,519
+high as well. And keep in mind trading
+
+102
+00:03:45,519 --> 00:03:47,200
+volumes in Hong Kong were pretty low
+
+103
+00:03:47,200 --> 00:03:49,760
+because um much lower than usual anyway
+
+104
+00:03:49,760 --> 00:03:51,440
+because the city's bracing itself for
+
+105
+00:03:51,440 --> 00:03:54,000
+the impact of the super typhoon regassa
+
+106
+00:03:54,000 --> 00:03:56,480
+as well. So that's even more impressive.
+
+107
+00:03:56,480 --> 00:03:59,680
+And as you can see in the pre-market uh
+
+108
+00:03:59,680 --> 00:04:02,000
+ADR shares, they're up almost 9% in New
+
+109
+00:04:02,000 --> 00:04:04,640
+York as well. Now Alpha Alibaba CEO
+
+110
+00:04:04,640 --> 00:04:07,200
+Eddie Woo said that demand for AI has
+
+111
+00:04:07,200 --> 00:04:09,519
+blown past expectations and he's pledged
+
+112
+00:04:09,519 --> 00:04:11,840
+to invest $50 billion for global
+
+113
+00:04:11,840 --> 00:04:14,720
+expansion. But like other Chinese
+
+114
+00:04:14,720 --> 00:04:16,799
+companies, Alibaba does face a bit of a
+
+115
+00:04:16,799 --> 00:04:19,040
+dilemma over access to Nvidia's AI
+
+116
+00:04:19,040 --> 00:04:21,280
+processors, which they need to train
+
+117
+00:04:21,280 --> 00:04:23,360
+advanced models. Now, Beijing is pushing
+
+118
+00:04:23,360 --> 00:04:25,680
+the country's tech firms like Alibaba to
+
+119
+00:04:25,680 --> 00:04:28,720
+wean themselves off Nvidia's AI chips,
+
+120
+00:04:28,720 --> 00:04:31,280
+nearly all of which are blocked by US
+
+121
+00:04:31,280 --> 00:04:33,440
+export controls. It's also worth noting
+
+122
+00:04:33,440 --> 00:04:35,520
+that Alibaba's ADRs, which are listed in
+
+123
+00:04:35,520 --> 00:04:37,040
+New York, as I said, well, they're
+
+124
+00:04:37,040 --> 00:04:38,720
+trading back at levels from four years
+
+125
+00:04:38,720 --> 00:04:40,880
+ago, but they're still about half of
+
+126
+00:04:40,880 --> 00:04:42,960
+what they were 5 years ago.
+
+127
+00:04:42,960 --> 00:04:45,120
+And shares in China and Hong Kong though
+
+128
+00:04:45,120 --> 00:04:47,199
+definitely did get a boost overall in
+
+129
+00:04:47,199 --> 00:04:49,120
+this news. Both the Hangen and the
+
+130
+00:04:49,120 --> 00:04:52,240
+Shanghai Composite are up sharply today.
+
+131
+00:04:52,240 --> 00:04:54,560
+And in fact, Asian stocks are trading
+
+132
+00:04:54,560 --> 00:04:56,720
+near four-year highs and remain on track
+
+133
+00:04:56,720 --> 00:04:58,160
+this month for their best monthly
+
+134
+00:04:58,160 --> 00:05:00,080
+performance in a year. I mean, Julie,
+
+135
+00:05:00,080 --> 00:05:01,440
+who said that September was meant to be
+
+136
+00:05:01,440 --> 00:05:02,880
+a poor month for stocks?
+
+137
+00:05:02,880 --> 00:05:04,720
+>> Yeah. Well, there's a few days left.
+
+138
+00:05:04,720 --> 00:05:07,280
+Don't don't jinx it, guys. Uh Brooke,
+
+139
+00:05:07,280 --> 00:05:09,759
+let's talk about the other AI driven
+
+140
+00:05:09,759 --> 00:05:11,199
+story that we are watching this morning.
+
+141
+00:05:11,199 --> 00:05:12,960
+And that is Micron. The shares initially
+
+142
+00:05:12,960 --> 00:05:14,720
+were higher after it reported after the
+
+143
+00:05:14,720 --> 00:05:16,560
+close. They have been wavering a little
+
+144
+00:05:16,560 --> 00:05:18,400
+bit.
+
+145
+00:05:18,400 --> 00:05:21,039
+Yeah, we did get a pop in uh after
+
+146
+00:05:21,039 --> 00:05:24,080
+market close on W or Tuesday. And now
+
+147
+00:05:24,080 --> 00:05:26,000
+we're seeing that reverse just a bit to
+
+148
+00:05:26,000 --> 00:05:27,520
+the downside down about 5 cents a
+
+149
+00:05:27,520 --> 00:05:29,120
+percent after this runup that this
+
+150
+00:05:29,120 --> 00:05:30,800
+company has had year to date. But the
+
+151
+00:05:30,800 --> 00:05:32,639
+memory chipmaker, which is used
+
+152
+00:05:32,639 --> 00:05:35,520
+alongside those Nvidia A uh Nvidia chips
+
+153
+00:05:35,520 --> 00:05:38,080
+in these AI data centers, beat on both
+
+154
+00:05:38,080 --> 00:05:39,680
+the top and bottom line. And that did
+
+155
+00:05:39,680 --> 00:05:41,680
+drive some renewed optimism about what
+
+156
+00:05:41,680 --> 00:05:44,240
+exactly this momentum, this AI trade
+
+157
+00:05:44,240 --> 00:05:46,479
+rally could be. So Micron beat them both
+
+158
+00:05:46,479 --> 00:05:48,080
+the top and bottom line. Their fiscal
+
+159
+00:05:48,080 --> 00:05:49,440
+fourth quarter revenue came in, as you
+
+160
+00:05:49,440 --> 00:05:52,479
+can see on your screen, at 11.3 billion.
+
+161
+00:05:52,479 --> 00:05:54,240
+That was more than the street had
+
+162
+00:05:54,240 --> 00:05:56,720
+expected. Adjusted earnings also beat as
+
+163
+00:05:56,720 --> 00:05:59,759
+well, coming in at $3.3. Also higher
+
+164
+00:05:59,759 --> 00:06:01,680
+than what the street has expected. And
+
+165
+00:06:01,680 --> 00:06:03,600
+it was this this outlook, this guidance
+
+166
+00:06:03,600 --> 00:06:05,759
+for the first quarter that also got Wall
+
+167
+00:06:05,759 --> 00:06:08,240
+Street excited perhaps. The CEO saying
+
+168
+00:06:08,240 --> 00:06:09,840
+on the call that over the coming years
+
+169
+00:06:09,840 --> 00:06:12,400
+they expect to trillions of dollars to
+
+170
+00:06:12,400 --> 00:06:15,199
+be invested in AI and a significant
+
+171
+00:06:15,199 --> 00:06:17,280
+portion of that they say will be spent
+
+172
+00:06:17,280 --> 00:06:20,240
+on memory, their key business there. And
+
+173
+00:06:20,240 --> 00:06:22,000
+there was this hope, this optimism on
+
+174
+00:06:22,000 --> 00:06:24,400
+the street overnight. We did see six
+
+175
+00:06:24,400 --> 00:06:27,120
+firms raise their price targets this
+
+176
+00:06:27,120 --> 00:06:28,720
+morning in the early hours of this
+
+177
+00:06:28,720 --> 00:06:30,479
+morning. That includes Barclays. That
+
+178
+00:06:30,479 --> 00:06:32,560
+also includes Key Bank as well as Piper
+
+179
+00:06:32,560 --> 00:06:34,400
+Sandlers. You could see there most of
+
+180
+00:06:34,400 --> 00:06:37,039
+them gearing towards that $200 price
+
+181
+00:06:37,039 --> 00:06:39,120
+point. We also heard from Wedbush,
+
+182
+00:06:39,120 --> 00:06:41,600
+Needam, and Rosenblats. They also raise
+
+183
+00:06:41,600 --> 00:06:43,919
+their uh price targets as well. And I do
+
+184
+00:06:43,919 --> 00:06:46,000
+want to point out that Rosenlat now has
+
+185
+00:06:46,000 --> 00:06:47,919
+the highest price target on the street
+
+186
+00:06:47,919 --> 00:06:51,199
+of $250. And if you take a look at where
+
+187
+00:06:51,199 --> 00:06:53,919
+the stock stands now at $165, that would
+
+188
+00:06:53,919 --> 00:06:56,880
+be an $100 additional value. And so
+
+189
+00:06:56,880 --> 00:06:59,520
+really waiting to see this momentum that
+
+190
+00:06:59,520 --> 00:07:01,360
+continues behind this stock. As you can
+
+191
+00:07:01,360 --> 00:07:02,479
+see, it's had quite the rally,
+
+192
+00:07:02,479 --> 00:07:04,240
+especially over these key summer months.
+
+193
+00:07:04,240 --> 00:07:06,479
+>> Yeah, we're going to dig more into what
+
+194
+00:07:06,479 --> 00:07:08,960
+the company is doing in the next hour.
+
+195
+00:07:08,960 --> 00:07:11,120
+Um, and then we also have to talk about
+
+196
+00:07:11,120 --> 00:07:13,360
+um a speech or speeches, I guess, that
+
+197
+00:07:13,360 --> 00:07:14,960
+happened yesterday. We were talking a
+
+198
+00:07:14,960 --> 00:07:17,759
+lot about uh Jerome Pal and his speech,
+
+199
+00:07:17,759 --> 00:07:19,360
+but there were also some other Fed
+
+200
+00:07:19,360 --> 00:07:21,520
+officials that we need to talk about as
+
+201
+00:07:21,520 --> 00:07:22,880
+well, right, Jen?
+
+202
+00:07:22,880 --> 00:07:24,960
+>> Yeah, that's right, Julie. Uh, Fed Chair
+
+203
+00:07:24,960 --> 00:07:27,520
+J. Pal not offering too much new in his
+
+204
+00:07:27,520 --> 00:07:30,240
+speech on Tuesday. Very non-committal on
+
+205
+00:07:30,240 --> 00:07:33,199
+the policy front, reiterating that the
+
+206
+00:07:33,199 --> 00:07:35,520
+balance of risks have shifted and that's
+
+207
+00:07:35,520 --> 00:07:38,160
+why the Fed cut rates that rates are
+
+208
+00:07:38,160 --> 00:07:40,400
+still modestly restrictive and that the
+
+209
+00:07:40,400 --> 00:07:43,039
+Fed's not on a preset course. Pal
+
+210
+00:07:43,039 --> 00:07:45,440
+reiterated that given the challenges to
+
+211
+00:07:45,440 --> 00:07:47,440
+both sides of the dual mandate, both on
+
+212
+00:07:47,440 --> 00:07:49,759
+employment and inflation, there is no
+
+213
+00:07:49,759 --> 00:07:52,960
+risk-free path for policy. But perhaps
+
+214
+00:07:52,960 --> 00:07:55,039
+the more interesting remarks on Tuesday
+
+215
+00:07:55,039 --> 00:07:57,520
+came from Fed Governor Michelle Bowman,
+
+216
+00:07:57,520 --> 00:07:59,520
+who said she is more concerned about
+
+217
+00:07:59,520 --> 00:08:01,680
+weakness in the labor market and the
+
+218
+00:08:01,680 --> 00:08:04,960
+economy, less concerned about inflation,
+
+219
+00:08:04,960 --> 00:08:07,520
+and wants to take preemptive action to
+
+220
+00:08:07,520 --> 00:08:09,919
+support the job market. She said she's
+
+221
+00:08:09,919 --> 00:08:12,240
+gaining confidence that the impact of
+
+222
+00:08:12,240 --> 00:08:14,160
+tariffs on inflation are not going to
+
+223
+00:08:14,160 --> 00:08:16,639
+lead to longerlasting inflation. In
+
+224
+00:08:16,639 --> 00:08:18,240
+fact, she said she thinks lower
+
+225
+00:08:18,240 --> 00:08:21,280
+immigration could a actually push down
+
+226
+00:08:21,280 --> 00:08:23,680
+inflation. An argument we have heard
+
+227
+00:08:23,680 --> 00:08:26,800
+from new Fed Governor Stephen Myron. Uh
+
+228
+00:08:26,800 --> 00:08:28,720
+but she warned that the job market has
+
+229
+00:08:28,720 --> 00:08:31,440
+become fragile and could deteriorate
+
+230
+00:08:31,440 --> 00:08:33,760
+significantly. Those are her words in
+
+231
+00:08:33,760 --> 00:08:35,599
+the coming months. And I just want to
+
+232
+00:08:35,599 --> 00:08:38,320
+read a passage from her speech yesterday
+
+233
+00:08:38,320 --> 00:08:40,880
+where she said, quote, "In my view, the
+
+234
+00:08:40,880 --> 00:08:43,120
+recent data, including the estimated
+
+235
+00:08:43,120 --> 00:08:45,920
+payroll employment benchmark revisions,
+
+236
+00:08:45,920 --> 00:08:48,480
+show that we are at serious risk of
+
+237
+00:08:48,480 --> 00:08:50,640
+already being behind the curve and
+
+238
+00:08:50,640 --> 00:08:52,560
+addressing deteriorating labor market
+
+239
+00:08:52,560 --> 00:08:54,480
+conditions. Should these conditions
+
+240
+00:08:54,480 --> 00:08:56,800
+continue, I am concerned that we will
+
+241
+00:08:56,800 --> 00:08:59,760
+need to adjust policy at a faster pace
+
+242
+00:08:59,760 --> 00:09:02,320
+and to a larger degree going forward."
+
+243
+00:09:02,320 --> 00:09:04,880
+So all eyes on her and perhaps that next
+
+244
+00:09:04,880 --> 00:09:07,839
+jobs report due out on October 3rd.
+
+245
+00:09:07,839 --> 00:09:10,399
+Bowman also went as far as to say that
+
+246
+00:09:10,399 --> 00:09:13,600
+the Fed is too data point dependent and
+
+247
+00:09:13,600 --> 00:09:16,399
+that data is inherently backwardlooking
+
+248
+00:09:16,399 --> 00:09:18,720
+and can put the Fed behind the curve and
+
+249
+00:09:18,720 --> 00:09:19,760
+that the Fed should be more
+
+250
+00:09:19,760 --> 00:09:21,600
+forward-looking, an approach that she
+
+251
+00:09:21,600 --> 00:09:23,360
+plans to take and one that the
+
+252
+00:09:23,360 --> 00:09:25,040
+administration has also been pushing
+
+253
+00:09:25,040 --> 00:09:26,320
+for.
+
+254
+00:09:26,320 --> 00:09:28,480
+>> Guys, thanks so much. A lot to consider
+
+255
+00:09:28,480 --> 00:09:30,000
+here this morning. Brooke, Jennifer
+
+256
+00:09:30,000 --> 00:09:32,640
+Ramson. Appreciate it. Coming up on
+
+257
+00:09:32,640 --> 00:09:33,760
+Morning Brief, we'll bring you today's
+
+258
+00:09:33,760 --> 00:09:35,279
+top trending tickers as we count you
+
+259
+00:09:35,279 --> 00:09:36,720
+down to the opening bell. Don't go
+
+260
+00:09:36,720 --> 00:09:39,080
+anywhere.
+
+261
+00:09:39,080 --> 00:09:44,619
+[Music]
+
+262
+00:09:46,000 --> 00:09:47,519
+And now time for some today's trending
+
+263
+00:09:47,519 --> 00:09:49,120
+tickers. We are watching Lithium
+
+264
+00:09:49,120 --> 00:09:51,680
+America's Oracle and Acadia Pharma.
+
+265
+00:09:51,680 --> 00:09:53,600
+First up, Lithium Americas. Those shares
+
+266
+00:09:53,600 --> 00:09:55,360
+are surging following reports that the
+
+267
+00:09:55,360 --> 00:09:57,440
+Trump administration is pursuing a stake
+
+268
+00:09:57,440 --> 00:09:59,360
+in the company. The White House proposed
+
+269
+00:09:59,360 --> 00:10:00,959
+taking equity in the lithium producer
+
+270
+00:10:00,959 --> 00:10:03,360
+during a renegotiation of the terms of a
+
+271
+00:10:03,360 --> 00:10:05,920
+$2.3 billion loan extended by the energy
+
+272
+00:10:05,920 --> 00:10:07,519
+department. That's according to
+
+273
+00:10:07,519 --> 00:10:09,600
+Bloomberg. Those shares are surging by
+
+274
+00:10:09,600 --> 00:10:11,519
+66% and we're seeing a lift to some
+
+275
+00:10:11,519 --> 00:10:14,560
+other lithium miners as well. Next up,
+
+276
+00:10:14,560 --> 00:10:16,240
+Oracle. The company reportedly looking
+
+277
+00:10:16,240 --> 00:10:18,720
+to raise $15 billion from corporate bond
+
+278
+00:10:18,720 --> 00:10:20,320
+sales. According to Bloomberg, the
+
+279
+00:10:20,320 --> 00:10:22,000
+software maker is selling debt in as
+
+280
+00:10:22,000 --> 00:10:24,079
+many as seven parts, including a rare
+
+281
+00:10:24,079 --> 00:10:26,160
+40-year bond. The deal comes as Oracle
+
+282
+00:10:26,160 --> 00:10:27,760
+begins to fulfill massive cloud
+
+283
+00:10:27,760 --> 00:10:29,600
+infrastructure deals with OpenAI and
+
+284
+00:10:29,600 --> 00:10:31,440
+Meta, which are boosting the company's
+
+285
+00:10:31,440 --> 00:10:33,200
+expenses. In the next several years,
+
+286
+00:10:33,200 --> 00:10:34,880
+it's projected to spend hundreds of
+
+287
+00:10:34,880 --> 00:10:36,959
+billions of dollars to rent and power
+
+288
+00:10:36,959 --> 00:10:39,920
+data centers. And finally, Aadia Pharma.
+
+289
+00:10:39,920 --> 00:10:41,680
+Those shares are sinking after the drug
+
+290
+00:10:41,680 --> 00:10:44,320
+makers rare disease drug trial failed.
+
+291
+00:10:44,320 --> 00:10:45,760
+The latest stage trial of its
+
+292
+00:10:45,760 --> 00:10:47,360
+investigative therapy to help treat
+
+293
+00:10:47,360 --> 00:10:50,399
+hyperphasia did to did not meet its
+
+294
+00:10:50,399 --> 00:10:52,560
+primary endpoint. Stifel analysts say
+
+295
+00:10:52,560 --> 00:10:54,160
+the trial failure removes one of the
+
+296
+00:10:54,160 --> 00:10:56,480
+potential upside drivers for that stock
+
+297
+00:10:56,480 --> 00:10:59,040
+and those shares down 12%. Meanwhile,
+
+298
+00:10:59,040 --> 00:11:00,720
+shares of Seleno Therapeutics, which
+
+299
+00:11:00,720 --> 00:11:02,240
+currently markets a drug to treat
+
+300
+00:11:02,240 --> 00:11:05,440
+hyperphasia, did jump on the news. As
+
+301
+00:11:05,440 --> 00:11:06,959
+always, you can scan the QR code below
+
+302
+00:11:06,959 --> 00:11:08,560
+to track the best and worst performing
+
+303
+00:11:08,560 --> 00:11:10,240
+stocks with Yahoo Finance's trending
+
+304
+00:11:10,240 --> 00:11:13,040
+tickers page. Well, big AI names took
+
+305
+00:11:13,040 --> 00:11:14,800
+some losses during trade Wednesday with
+
+306
+00:11:14,800 --> 00:11:16,959
+Nvidia and Oracle recovering pre-market
+
+307
+00:11:16,959 --> 00:11:19,200
+after both closing lower. My next guest
+
+308
+00:11:19,200 --> 00:11:20,720
+says announcements of major deals
+
+309
+00:11:20,720 --> 00:11:22,720
+between those companies and OpenAI could
+
+310
+00:11:22,720 --> 00:11:24,560
+be fueling what he calls a potentially
+
+311
+00:11:24,560 --> 00:11:26,720
+epic bubble. Joining us now is Joe
+
+312
+00:11:26,720 --> 00:11:30,240
+Heganner, Astrazoa Capital CIO. Joe,
+
+313
+00:11:30,240 --> 00:11:31,279
+thanks for being here.
+
+314
+00:11:31,279 --> 00:11:32,240
+>> Thanks for having me.
+
+315
+00:11:32,240 --> 00:11:34,640
+>> So, it's been really interesting to
+
+316
+00:11:34,640 --> 00:11:37,279
+follow this AI trade. We've seen, as I
+
+317
+00:11:37,279 --> 00:11:38,480
+was talking about earlier in the show,
+
+318
+00:11:38,480 --> 00:11:40,160
+sort of the waxing and waning of
+
+319
+00:11:40,160 --> 00:11:41,279
+sentiment, right? This is going to be
+
+320
+00:11:41,279 --> 00:11:43,360
+the biggest thing ever. How could it
+
+321
+00:11:43,360 --> 00:11:45,680
+possibly be? Oh, all these companies are
+
+322
+00:11:45,680 --> 00:11:47,040
+spending money. they're spending too
+
+323
+00:11:47,040 --> 00:11:48,720
+much money with, you know, so it seems
+
+324
+00:11:48,720 --> 00:11:51,120
+like we're in another one of those
+
+325
+00:11:51,120 --> 00:11:54,320
+waning or at least questioning phases.
+
+326
+00:11:54,320 --> 00:11:56,000
+Is that fair to say? And and do you
+
+327
+00:11:56,000 --> 00:12:00,240
+think it's valid to question the whole
+
+328
+00:12:00,240 --> 00:12:01,760
+uh structure of the thing?
+
+329
+00:12:01,760 --> 00:12:03,279
+>> Well, I definitely think it's valid to
+
+330
+00:12:03,279 --> 00:12:05,279
+question uh the overall structure and
+
+331
+00:12:05,279 --> 00:12:07,519
+the phenomenon that's taking place. Um
+
+332
+00:12:07,519 --> 00:12:08,880
+you know, we're we're drawing a lot of
+
+333
+00:12:08,880 --> 00:12:10,880
+similarities between what's happening
+
+334
+00:12:10,880 --> 00:12:12,880
+now and of course.com. That's not
+
+335
+00:12:12,880 --> 00:12:15,279
+necessarily a new reference. Um, but the
+
+336
+00:12:15,279 --> 00:12:17,839
+thing I think is particularly
+
+337
+00:12:17,839 --> 00:12:20,480
+interesting, right, is just the timing
+
+338
+00:12:20,480 --> 00:12:24,240
+of of market bubbles and what what's
+
+339
+00:12:24,240 --> 00:12:26,399
+brings them to a halt, I suppose, right?
+
+340
+00:12:26,399 --> 00:12:29,279
+You the dot era, the only thing that
+
+341
+00:12:29,279 --> 00:12:31,920
+really popped or burst that bubble was
+
+342
+00:12:31,920 --> 00:12:33,680
+the Fed raising interest rates, right?
+
+343
+00:12:33,680 --> 00:12:35,920
+And and um kind of
+
+344
+00:12:35,920 --> 00:12:38,160
+>> that led to, you know, the epic crash.
+
+345
+00:12:38,160 --> 00:12:40,800
+But for years there were commentators
+
+346
+00:12:40,800 --> 00:12:43,440
+and professionals and analysts from 1995
+
+347
+00:12:43,440 --> 00:12:45,519
+all the way to 2000 that were pounding
+
+348
+00:12:45,519 --> 00:12:47,200
+the table saying we're in a bubble.
+
+349
+00:12:47,200 --> 00:12:50,800
+We're in a bubble. And they were right.
+
+350
+00:12:50,800 --> 00:12:53,920
+But if you got short in 1995, right? You
+
+351
+00:12:53,920 --> 00:12:55,440
+know, you weren't you didn't exist by
+
+352
+00:12:55,440 --> 00:12:59,040
+the 1999 and you missed out on 40% plus
+
+353
+00:12:59,040 --> 00:13:01,120
+equity market returns for for years to
+
+354
+00:13:01,120 --> 00:13:02,720
+come. And so that's the interesting
+
+355
+00:13:02,720 --> 00:13:04,720
+thing I think that's taking place now is
+
+356
+00:13:04,720 --> 00:13:07,600
+I definitely think we are in a bubble.
+
+357
+00:13:07,600 --> 00:13:09,920
+Uh and so you know what do you do at
+
+358
+00:13:09,920 --> 00:13:12,000
+this stage, right? Because we just cut
+
+359
+00:13:12,000 --> 00:13:13,680
+interest rates and we're looking at
+
+360
+00:13:13,680 --> 00:13:15,920
+cutting more and there's fiscal spending
+
+361
+00:13:15,920 --> 00:13:16,800
+coming down the pike,
+
+362
+00:13:16,800 --> 00:13:18,560
+>> right? So there's nothing externally
+
+363
+00:13:18,560 --> 00:13:21,040
+necessarily that would burst the bubble.
+
+364
+00:13:21,040 --> 00:13:22,480
+>> If anything, I feel like we're about to
+
+365
+00:13:22,480 --> 00:13:24,880
+pour some gasoline on the fire and um
+
+366
+00:13:24,880 --> 00:13:26,720
+and so that's what gives us a little bit
+
+367
+00:13:26,720 --> 00:13:28,800
+of pause because I definitely think the
+
+368
+00:13:28,800 --> 00:13:31,440
+the left tail scenario, the the risk to
+
+369
+00:13:31,440 --> 00:13:34,160
+the downside is immense because by any
+
+370
+00:13:34,160 --> 00:13:36,000
+measure valuations are very stretched.
+
+371
+00:13:36,000 --> 00:13:37,680
+We're seeing all sorts of these circular
+
+372
+00:13:37,680 --> 00:13:40,800
+deals that we saw in 1998, 1999 with
+
+373
+00:13:40,800 --> 00:13:42,639
+some of the same players as we're seeing
+
+374
+00:13:42,639 --> 00:13:46,079
+today. Um, and yet it's very difficult
+
+375
+00:13:46,079 --> 00:13:48,480
+for me to actually get bearish right now
+
+376
+00:13:48,480 --> 00:13:51,360
+because there are so many positive
+
+377
+00:13:51,360 --> 00:13:54,079
+catalysts as it relates to um kind of
+
+378
+00:13:54,079 --> 00:13:56,160
+pushing this sentiment towards more uh
+
+379
+00:13:56,160 --> 00:13:57,120
+extreme levels.
+
+380
+00:13:57,120 --> 00:13:59,120
+>> So, and you're on the credit side of the
+
+381
+00:13:59,120 --> 00:14:00,079
+equation, right?
+
+382
+00:14:00,079 --> 00:14:02,240
+>> Mostly mostly on the credit side. Yes.
+
+383
+00:14:02,240 --> 00:14:04,560
+>> So, how do you then play it? I mean, and
+
+384
+00:14:04,560 --> 00:14:06,079
+you mentioned some of the same players
+
+385
+00:14:06,079 --> 00:14:09,120
+like Oracle, which you know, experienced
+
+386
+00:14:09,120 --> 00:14:10,880
+the bust in the dotcom era, but they're
+
+387
+00:14:10,880 --> 00:14:12,160
+still around and they're back and
+
+388
+00:14:12,160 --> 00:14:14,000
+they're bigger than ever. Like, do you
+
+389
+00:14:14,000 --> 00:14:15,839
+go in I we just talked about their bond
+
+390
+00:14:15,839 --> 00:14:17,920
+sale. Do you go in and is that an
+
+391
+00:14:17,920 --> 00:14:19,279
+attractive offering?
+
+392
+00:14:19,279 --> 00:14:21,120
+>> Uh, well, I would argue absolutely not,
+
+393
+00:14:21,120 --> 00:14:24,160
+but um but it's just not necessarily
+
+394
+00:14:24,160 --> 00:14:25,839
+anything to do with Oracle. It's just a
+
+395
+00:14:25,839 --> 00:14:28,160
+function of credit spreads broadly right
+
+396
+00:14:28,160 --> 00:14:30,160
+now are the near the lowest they've ever
+
+397
+00:14:30,160 --> 00:14:33,839
+been in history. and and it does look
+
+398
+00:14:33,839 --> 00:14:35,680
+like we're seeing some macroeconomic
+
+399
+00:14:35,680 --> 00:14:38,160
+deterioration in you know jobs data and
+
+400
+00:14:38,160 --> 00:14:40,240
+things along those lines and you know a
+
+401
+00:14:40,240 --> 00:14:42,560
+$15 billion investment grade issuance at
+
+402
+00:14:42,560 --> 00:14:46,800
+sofur plus 40 basis points is just not
+
+403
+00:14:46,800 --> 00:14:47,760
+compelling to us
+
+404
+00:14:47,760 --> 00:14:49,600
+>> I I want to just translate that for
+
+405
+00:14:49,600 --> 00:14:51,040
+people who are not steeped in the in the
+
+406
+00:14:51,040 --> 00:14:52,720
+credit market. So basically, you are not
+
+407
+00:14:52,720 --> 00:14:53,600
+getting paid
+
+408
+00:14:53,600 --> 00:14:54,079
+>> exactly
+
+409
+00:14:54,079 --> 00:14:56,560
+>> as an investor to make these investments
+
+410
+00:14:56,560 --> 00:14:57,920
+right now is another way to put that.
+
+411
+00:14:57,920 --> 00:14:59,519
+>> You're getting paid Yes. Exactly. Right.
+
+412
+00:14:59,519 --> 00:15:01,360
+You're getting paid 40 extra basis
+
+413
+00:15:01,360 --> 00:15:04,480
+points per year in yield over treasuries
+
+414
+00:15:04,480 --> 00:15:07,040
+to assume the credit risk of of a
+
+415
+00:15:07,040 --> 00:15:09,920
+corporation that could not exist in 10
+
+416
+00:15:09,920 --> 00:15:11,519
+years from now. And it's very difficult
+
+417
+00:15:11,519 --> 00:15:14,000
+to say. I mean, if you had if you asked
+
+418
+00:15:14,000 --> 00:15:18,240
+me or any professional in 1995 if you
+
+419
+00:15:18,240 --> 00:15:19,440
+thought Blackberry was going to be
+
+420
+00:15:19,440 --> 00:15:21,920
+around in 10 years, I mean, most people
+
+421
+00:15:21,920 --> 00:15:23,120
+would probably say they'll for sure be
+
+422
+00:15:23,120 --> 00:15:24,560
+around. And there's just there's all
+
+423
+00:15:24,560 --> 00:15:26,000
+sorts of things that could happen over
+
+424
+00:15:26,000 --> 00:15:27,680
+the long haul. And so when you're
+
+425
+00:15:27,680 --> 00:15:28,880
+thinking about credit risk in
+
+426
+00:15:28,880 --> 00:15:30,399
+particular, you just want to be a little
+
+427
+00:15:30,399 --> 00:15:32,399
+bit more discerning. Um, and so the way
+
+428
+00:15:32,399 --> 00:15:33,519
+that we're kind of looking at that or
+
+429
+00:15:33,519 --> 00:15:34,800
+playing that is
+
+430
+00:15:34,800 --> 00:15:37,360
+>> we're actually playing mostly on a
+
+431
+00:15:37,360 --> 00:15:39,440
+relative value basis. And so, you know,
+
+432
+00:15:39,440 --> 00:15:41,600
+we can buy credit default swaps that
+
+433
+00:15:41,600 --> 00:15:43,680
+effectively would be you'd be short the
+
+434
+00:15:43,680 --> 00:15:45,199
+the the credits that you don't like.
+
+435
+00:15:45,199 --> 00:15:47,120
+>> So, you're basically buying insurance
+
+436
+00:15:47,120 --> 00:15:49,440
+against the company defaulting on its
+
+437
+00:15:49,440 --> 00:15:50,160
+debt at some point.
+
+438
+00:15:50,160 --> 00:15:51,839
+>> Exactly. The beautiful thing about that
+
+439
+00:15:51,839 --> 00:15:53,839
+instrument is that the lower credit
+
+440
+00:15:53,839 --> 00:15:56,079
+spreads go, the smaller your insurance
+
+441
+00:15:56,079 --> 00:15:58,800
+premium is for the protection. And so,
+
+442
+00:15:58,800 --> 00:16:00,720
+as they get lower and lower and more and
+
+443
+00:16:00,720 --> 00:16:03,360
+more compressed, it costs us less and
+
+444
+00:16:03,360 --> 00:16:04,959
+less to buy. It's that old saying,
+
+445
+00:16:04,959 --> 00:16:06,399
+right? Buy insurance when you don't
+
+446
+00:16:06,399 --> 00:16:08,000
+think you need it. And so how do you end
+
+447
+00:16:08,000 --> 00:16:09,680
+up making money on those then?
+
+448
+00:16:09,680 --> 00:16:11,199
+>> Well, it's a relative value. That's a
+
+449
+00:16:11,199 --> 00:16:12,639
+great question, right? So if you if you
+
+450
+00:16:12,639 --> 00:16:15,440
+give me $100 and I buy $100 worth of
+
+451
+00:16:15,440 --> 00:16:17,600
+bonds and the yield on that is eight or
+
+452
+00:16:17,600 --> 00:16:21,600
+nine%, I'm happy to take one or 2% perom
+
+453
+00:16:21,600 --> 00:16:23,360
+of that to purchase protection on the
+
+454
+00:16:23,360 --> 00:16:24,800
+credits that I don't like.
+
+455
+00:16:24,800 --> 00:16:27,759
+>> Gotcha. Okay. So um so that's how you're
+
+456
+00:16:27,759 --> 00:16:29,600
+looking at things right now. How do
+
+457
+00:16:29,600 --> 00:16:32,000
+yield how do does what the Fed is doing,
+
+458
+00:16:32,000 --> 00:16:34,240
+how does that feed into all of this?
+
+459
+00:16:34,240 --> 00:16:36,639
+>> Oh gosh. um you know
+
+460
+00:16:36,639 --> 00:16:37,920
+>> in 20 seconds. No, I'm just
+
+461
+00:16:37,920 --> 00:16:41,199
+>> Yeah. So, uh I think that there's Yeah,
+
+462
+00:16:41,199 --> 00:16:42,399
+I think there's an enormous amount of
+
+463
+00:16:42,399 --> 00:16:44,959
+risk over the intermediate to longer
+
+464
+00:16:44,959 --> 00:16:47,120
+term as it relates to the shape of the
+
+465
+00:16:47,120 --> 00:16:52,079
+yield curve. Um in terms of the polarity
+
+466
+00:16:52,079 --> 00:16:53,839
+that seems to exist within the Federal
+
+467
+00:16:53,839 --> 00:16:55,040
+Reserve right now. There are a handful
+
+468
+00:16:55,040 --> 00:16:56,639
+of people, and I'm kind of in this camp,
+
+469
+00:16:56,639 --> 00:16:59,040
+too. I think it's very hard to argue
+
+470
+00:16:59,040 --> 00:17:01,279
+that financial conditions are tight when
+
+471
+00:17:01,279 --> 00:17:03,120
+crypto is going parabolic and equity
+
+472
+00:17:03,120 --> 00:17:05,760
+markets are all-time highs and there's
+
+473
+00:17:05,760 --> 00:17:07,919
+um what did Powell say in his presser
+
+474
+00:17:07,919 --> 00:17:09,520
+the other day? It was effectively
+
+475
+00:17:09,520 --> 00:17:10,959
+Greenspan's version of a rational
+
+476
+00:17:10,959 --> 00:17:12,959
+exuberant stock valuations are elevated.
+
+477
+00:17:12,959 --> 00:17:14,799
+I think he said
+
+478
+00:17:14,799 --> 00:17:19,280
+>> um the jobs data while deteriorating
+
+479
+00:17:19,280 --> 00:17:21,839
+it's unclear to me how much of that is a
+
+480
+00:17:21,839 --> 00:17:23,520
+function of efficiency and productivity
+
+481
+00:17:23,520 --> 00:17:26,480
+gains. Right? If I'm a law firm and I
+
+482
+00:17:26,480 --> 00:17:28,319
+don't need the 100 analysts anymore
+
+483
+00:17:28,319 --> 00:17:30,720
+because I have AI embedded tools and I
+
+484
+00:17:30,720 --> 00:17:33,600
+don't hire as much, I'm immensely more
+
+485
+00:17:33,600 --> 00:17:35,440
+productive and my equity value is
+
+486
+00:17:35,440 --> 00:17:36,640
+actually going to be significantly
+
+487
+00:17:36,640 --> 00:17:38,240
+higher, but the jobs data is going to be
+
+488
+00:17:38,240 --> 00:17:38,960
+weaker,
+
+489
+00:17:38,960 --> 00:17:41,280
+>> right? And so these there are structural
+
+490
+00:17:41,280 --> 00:17:42,799
+structural changes that are taking place
+
+491
+00:17:42,799 --> 00:17:45,919
+in the economy that could lead to weak
+
+492
+00:17:45,919 --> 00:17:48,480
+economic data or weak jobs data, but it
+
+493
+00:17:48,480 --> 00:17:50,400
+doesn't necessarily imply that changing
+
+494
+00:17:50,400 --> 00:17:52,320
+the interest rate at the Federal Reserve
+
+495
+00:17:52,320 --> 00:17:53,919
+overnight rate is going to do anything
+
+496
+00:17:53,919 --> 00:17:55,520
+to adjust that or fix that. If anything,
+
+497
+00:17:55,520 --> 00:17:56,720
+you're just going to pour gasoline on
+
+498
+00:17:56,720 --> 00:17:57,200
+that fire.
+
+499
+00:17:57,200 --> 00:17:58,640
+>> So you think there's a risk to them
+
+500
+00:17:58,640 --> 00:17:59,679
+continuing to cut rates?
+
+501
+00:17:59,679 --> 00:18:01,520
+>> Yes, definitely. And I think we'll see
+
+502
+00:18:01,520 --> 00:18:03,440
+that. And if if if that is correct,
+
+503
+00:18:03,440 --> 00:18:04,960
+we'll we'll continue to see the yield
+
+504
+00:18:04,960 --> 00:18:06,799
+curve steepen, the long end of the curve
+
+505
+00:18:06,799 --> 00:18:08,240
+start to go higher and higher as the
+
+506
+00:18:08,240 --> 00:18:09,760
+front end comes down.
+
+507
+00:18:09,760 --> 00:18:12,559
+>> And that also to your earlier point
+
+508
+00:18:12,559 --> 00:18:16,160
+makes the maybe extends the bubble even
+
+509
+00:18:16,160 --> 00:18:16,960
+further.
+
+510
+00:18:16,960 --> 00:18:19,600
+>> Yes, I I do. And I do also think if the
+
+511
+00:18:19,600 --> 00:18:21,280
+long end of the curve continues to march
+
+512
+00:18:21,280 --> 00:18:24,240
+higher, we'll see some sort of uh yield
+
+513
+00:18:24,240 --> 00:18:27,520
+curve control via Bessant or or maybe
+
+514
+00:18:27,520 --> 00:18:29,600
+even the Federal Reserve who you know
+
+515
+00:18:29,600 --> 00:18:31,120
+Trump's going to install the new Fed
+
+516
+00:18:31,120 --> 00:18:33,200
+chair in not too long of a time from
+
+517
+00:18:33,200 --> 00:18:35,919
+now. Um and he's already had significant
+
+518
+00:18:35,919 --> 00:18:38,559
+influence on you know who's who the
+
+519
+00:18:38,559 --> 00:18:39,760
+board of governors are, right?
+
+520
+00:18:39,760 --> 00:18:41,840
+>> And so it could be a very different
+
+521
+00:18:41,840 --> 00:18:43,760
+Federal Reserve in a year from now than
+
+522
+00:18:43,760 --> 00:18:44,720
+the one we're seeing today.
+
+523
+00:18:44,720 --> 00:18:46,240
+>> And just briefly, yield curve control.
+
+524
+00:18:46,240 --> 00:18:48,000
+How what would that look like? Well,
+
+525
+00:18:48,000 --> 00:18:49,360
+there's a number of ways to play that
+
+526
+00:18:49,360 --> 00:18:51,280
+out, but effectively, right, but there's
+
+527
+00:18:51,280 --> 00:18:54,080
+um you would a government or a central
+
+528
+00:18:54,080 --> 00:18:56,799
+bank would implement that if they don't
+
+529
+00:18:56,799 --> 00:19:00,080
+like long end the the trajectory of long
+
+530
+00:19:00,080 --> 00:19:01,360
+end interest rates, right? The Fed can
+
+531
+00:19:01,360 --> 00:19:03,120
+only control the overnight rate and then
+
+532
+00:19:03,120 --> 00:19:04,480
+the rest of the curve is extrapolated
+
+533
+00:19:04,480 --> 00:19:06,320
+out via markets.
+
+534
+00:19:06,320 --> 00:19:10,080
+>> But you can take a bazooka and go buy
+
+535
+00:19:10,080 --> 00:19:11,840
+hundreds of billions of dollars worth of
+
+536
+00:19:11,840 --> 00:19:14,640
+30-year Treasury bonds and force the
+
+537
+00:19:14,640 --> 00:19:17,520
+30-year rate lower. Um you could also
+
+538
+00:19:17,520 --> 00:19:19,520
+and this is OB they've already mentioned
+
+539
+00:19:19,520 --> 00:19:22,000
+this publicly you could uh deregulate
+
+540
+00:19:22,000 --> 00:19:23,440
+the banks to where you could encourage
+
+541
+00:19:23,440 --> 00:19:25,919
+or facilitate uh you know the large
+
+542
+00:19:25,919 --> 00:19:28,640
+banks in the US to uh purchase be
+
+543
+00:19:28,640 --> 00:19:31,280
+purchasers of uh long end treasury bonds
+
+544
+00:19:31,280 --> 00:19:33,360
+to increase demand to lower interest
+
+545
+00:19:33,360 --> 00:19:35,120
+rates. There's a number of tweaks and
+
+546
+00:19:35,120 --> 00:19:36,960
+and if anybody's going to do it Scott
+
+547
+00:19:36,960 --> 00:19:39,360
+Besset is the guy. um you know he
+
+548
+00:19:39,360 --> 00:19:42,160
+understands capital markets so well that
+
+549
+00:19:42,160 --> 00:19:44,799
+um if you know if he wants lower rates
+
+550
+00:19:44,799 --> 00:19:46,480
+I'm not necessarily going to bet against
+
+551
+00:19:46,480 --> 00:19:48,160
+him because he's got a lot of levers at
+
+552
+00:19:48,160 --> 00:19:49,200
+his disposal.
+
+553
+00:19:49,200 --> 00:19:50,960
+>> Okay, got to leave it there. Joe, thank
+
+554
+00:19:50,960 --> 00:19:52,960
+you so much. Interesting. All right,
+
+555
+00:19:52,960 --> 00:19:54,799
+coming up on Yahoo Finance Opening Bid,
+
+556
+00:19:54,799 --> 00:19:56,320
+our executive editor Brian Sazi is
+
+557
+00:19:56,320 --> 00:19:57,520
+joining us now to give us a little
+
+558
+00:19:57,520 --> 00:19:58,799
+preview. What's coming up?
+
+559
+00:19:58,799 --> 00:20:00,400
+>> Uh Julie, uh really interesting chat
+
+560
+00:20:00,400 --> 00:20:01,919
+there. I thoroughly enjoyed all the chat
+
+561
+00:20:01,919 --> 00:20:04,240
+on credit. But as for opening bid, I am
+
+562
+00:20:04,240 --> 00:20:06,240
+staying on the AI trade. I think this
+
+563
+00:20:06,240 --> 00:20:09,039
+notion that uh we are near peak AI capex
+
+564
+00:20:09,039 --> 00:20:10,640
+needs to be completely tossed in the
+
+565
+00:20:10,640 --> 00:20:11,840
+trash. Look at that good news out of
+
+566
+00:20:11,840 --> 00:20:14,160
+Micron Alibaba overnight. Good stuff
+
+567
+00:20:14,160 --> 00:20:15,360
+indeed, Julie.
+
+568
+00:20:15,360 --> 00:20:17,200
+>> Looking forward to it. Thanks, S. That
+
+569
+00:20:17,200 --> 00:20:18,400
+does it for morning brief. Much more
+
+570
+00:20:18,400 --> 00:20:22,280
+ahead on Yahoo Finance.

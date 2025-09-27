@@ -1,19 +1,39 @@
 "use client"
 
 import { useState, useEffect, useRef } from "react"
-import { MessageCircleMore, X, Send, Mic, MicOff, Globe, Loader2, ChevronDown, ChevronUp, Maximize2, Minimize2 } from "lucide-react"
+import { MessageCircleMore, X, Send, Mic, MicOff, Globe, Loader2, ChevronDown, ChevronUp, Maximize2, Minimize2, IndianRupee, TrendingUp, TrendingDown } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { cn } from "@/lib/utils"
 import { useLanguage } from "@/components/language-provider"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip"
+import { Badge } from "@/components/ui/badge"
 
 type Message = {
   id: string
   text: string
   isUser: boolean
   isLoading?: boolean
+  stockData?: StockAnalysis
+}
+
+interface StockAnalysis {
+  symbol: string
+  name: string
+  currentPrice: number
+  change: number
+  changePercent: number
+  recommendation: 'BUY' | 'SELL' | 'HOLD' | 'STRONG_BUY' | 'STRONG_SELL'
+  targetPrice: number
+  riskLevel: 'LOW' | 'MEDIUM' | 'HIGH'
+  marketCap: number
+  pe: number
+  analysis: {
+    strengths: string[]
+    risks: string[]
+    outlook: string
+  }
 }
 
 // Access the API key from environment variable
@@ -30,11 +50,211 @@ const SUPPORTED_LANGUAGES = [
   { code: "ko", name: "한국어" },
   { code: "ru", name: "Русский" },
   { code: "ar", name: "العربية" },
+  { code: "hi", name: "हिंदी" },
 ];
+
+// Mock stock data - In production, use real API like Alpha Vantage, Yahoo Finance, etc.
+const mockStockData: Record<string, StockAnalysis> = {
+  'RELIANCE': {
+    symbol: 'RELIANCE',
+    name: 'Reliance Industries Ltd',
+    currentPrice: 2485.30,
+    change: 45.20,
+    changePercent: 1.85,
+    recommendation: 'BUY',
+    targetPrice: 2650.00,
+    riskLevel: 'MEDIUM',
+    marketCap: 1680000,
+    pe: 24.5,
+    analysis: {
+      strengths: ['Strong petrochemical business', 'Growing digital ecosystem with Jio', 'Retail expansion', 'Debt reduction'],
+      risks: ['Oil price volatility', 'Regulatory changes', 'Competition in telecom'],
+      outlook: 'Positive long-term outlook with diversified business model and strong digital growth'
+    }
+  },
+  'TCS': {
+    symbol: 'TCS',
+    name: 'Tata Consultancy Services',
+    currentPrice: 3987.45,
+    change: -23.15,
+    changePercent: -0.58,
+    recommendation: 'HOLD',
+    targetPrice: 4100.00,
+    riskLevel: 'LOW',
+    marketCap: 1450000,
+    pe: 28.7,
+    analysis: {
+      strengths: ['Market leader in IT services', 'Strong client relationships', 'Digital transformation expertise'],
+      risks: ['Currency fluctuation', 'Visa restrictions', 'Increased competition'],
+      outlook: 'Stable growth expected with focus on cloud and digital services'
+    }
+  },
+  'HDFCBANK': {
+    symbol: 'HDFCBANK',
+    name: 'HDFC Bank Ltd',
+    currentPrice: 1642.75,
+    change: 28.90,
+    changePercent: 1.79,
+    recommendation: 'STRONG_BUY',
+    targetPrice: 1800.00,
+    riskLevel: 'LOW',
+    marketCap: 1250000,
+    pe: 19.8,
+    analysis: {
+      strengths: ['Strong asset quality', 'Consistent profitability', 'Digital banking leadership', 'Robust deposit growth'],
+      risks: ['Interest rate changes', 'Economic slowdown impact', 'Regulatory changes'],
+      outlook: 'Excellent fundamentals with strong growth prospects in retail banking'
+    }
+  },
+  'INFY': {
+    symbol: 'INFY',
+    name: 'Infosys Ltd',
+    currentPrice: 1845.60,
+    change: -12.35,
+    changePercent: -0.66,
+    recommendation: 'HOLD',
+    targetPrice: 1900.00,
+    riskLevel: 'MEDIUM',
+    marketCap: 780000,
+    pe: 25.4,
+    analysis: {
+      strengths: ['Strong digital capabilities', 'Good client diversification', 'Consistent margins'],
+      risks: ['Talent retention challenges', 'Currency headwinds', 'Slowing growth'],
+      outlook: 'Moderate growth expected with focus on automation and AI services'
+    }
+  },
+  'BHARTIARTL': {
+    symbol: 'BHARTIARTL',
+    name: 'Bharti Airtel Ltd',
+    currentPrice: 1567.25,
+    change: 67.80,
+    changePercent: 4.52,
+    recommendation: 'BUY',
+    targetPrice: 1700.00,
+    riskLevel: 'MEDIUM',
+    marketCap: 890000,
+    pe: 56.8,
+    analysis: {
+      strengths: ['5G rollout advantage', 'Strong market position', 'Digital services growth', 'Africa operations'],
+      risks: ['High spectrum costs', 'Regulatory pressures', 'Competition from Jio'],
+      outlook: 'Positive outlook with 5G monetization and digital services expansion'
+    }
+  }
+};
+
+function StockCard({ stockData }: { stockData: StockAnalysis }) {
+  const getRecommendationColor = (rec: string) => {
+    switch (rec) {
+      case 'STRONG_BUY': return 'bg-green-600 text-white'
+      case 'BUY': return 'bg-green-500 text-white'
+      case 'HOLD': return 'bg-yellow-500 text-black'
+      case 'SELL': return 'bg-red-500 text-white'
+      case 'STRONG_SELL': return 'bg-red-600 text-white'
+      default: return 'bg-gray-500 text-white'
+    }
+  }
+
+  const getRiskColor = (risk: string) => {
+    switch (risk) {
+      case 'LOW': return 'text-green-600 bg-green-50 border-green-200'
+      case 'MEDIUM': return 'text-yellow-600 bg-yellow-50 border-yellow-200'
+      case 'HIGH': return 'text-red-600 bg-red-50 border-red-200'
+      default: return 'text-gray-600 bg-gray-50 border-gray-200'
+    }
+  }
+
+  return (
+    <div className="mt-3 p-4 border rounded-lg bg-card space-y-3">
+      {/* Stock Header */}
+      <div className="flex items-center justify-between">
+        <div>
+          <h3 className="font-bold text-lg flex items-center gap-2">
+            {stockData.symbol}
+            <IndianRupee className="w-4 h-4" />
+          </h3>
+          <p className="text-sm text-muted-foreground">{stockData.name}</p>
+        </div>
+        <div className="text-right">
+          <div className="flex items-center gap-1">
+            <span className="text-2xl font-bold">₹{stockData.currentPrice.toFixed(2)}</span>
+            {stockData.change >= 0 ? 
+              <TrendingUp className="w-5 h-5 text-green-500" /> : 
+              <TrendingDown className="w-5 h-5 text-red-500" />
+            }
+          </div>
+          <div className={`text-sm ${stockData.change >= 0 ? 'text-green-600' : 'text-red-600'}`}>
+            {stockData.change >= 0 ? '+' : ''}{stockData.change.toFixed(2)} ({stockData.changePercent.toFixed(2)}%)
+          </div>
+        </div>
+      </div>
+
+      {/* Key Metrics */}
+      <div className="grid grid-cols-2 gap-4 text-sm">
+        <div className="space-y-1">
+          <span className="text-muted-foreground">Market Cap:</span>
+          <div className="font-semibold">₹{(stockData.marketCap / 100000).toFixed(1)}L Cr</div>
+        </div>
+        <div className="space-y-1">
+          <span className="text-muted-foreground">P/E Ratio:</span>
+          <div className="font-semibold">{stockData.pe}</div>
+        </div>
+        <div className="space-y-1">
+          <span className="text-muted-foreground">Target Price:</span>
+          <div className="font-semibold">₹{stockData.targetPrice.toFixed(2)}</div>
+        </div>
+        <div className="space-y-1">
+          <span className="text-muted-foreground">Upside:</span>
+          <div className="font-semibold text-green-600">
+            {(((stockData.targetPrice - stockData.currentPrice) / stockData.currentPrice) * 100).toFixed(1)}%
+          </div>
+        </div>
+      </div>
+
+      {/* Recommendation & Risk */}
+      <div className="flex items-center justify-between">
+        <Badge className={getRecommendationColor(stockData.recommendation)}>
+          {stockData.recommendation.replace('_', ' ')}
+        </Badge>
+        <Badge variant="outline" className={getRiskColor(stockData.riskLevel)}>
+          {stockData.riskLevel} RISK
+        </Badge>
+      </div>
+
+      {/* Analysis */}
+      <div className="space-y-2">
+        <div>
+          <h4 className="font-semibold text-green-700 text-sm mb-1">Strengths:</h4>
+          <ul className="text-xs text-muted-foreground space-y-0.5">
+            {stockData.analysis.strengths.map((strength, idx) => (
+              <li key={idx}>• {strength}</li>
+            ))}
+          </ul>
+        </div>
+        
+        <div>
+          <h4 className="font-semibold text-red-700 text-sm mb-1">Risks:</h4>
+          <ul className="text-xs text-muted-foreground space-y-0.5">
+            {stockData.analysis.risks.map((risk, idx) => (
+              <li key={idx}>• {risk}</li>
+            ))}
+          </ul>
+        </div>
+
+        <div>
+          <h4 className="font-semibold text-blue-700 text-sm mb-1">Outlook:</h4>
+          <p className="text-xs text-muted-foreground">{stockData.analysis.outlook}</p>
+        </div>
+      </div>
+
+      <div className="text-xs text-center text-muted-foreground pt-2 border-t">
+        ⚠️ This is not financial advice. Please consult with a financial advisor before investing.
+      </div>
+    </div>
+  )
+}
 
 function ChatMessage({ message }: { message: Message }) {
   const formatText = (text: string) => {
-    // Add more sophisticated formatting - handle markdown-like syntax
     return text.split('\n').map((line, i) => (
       <p key={i} className={line.startsWith('*') ? "font-semibold my-1" : "my-1"}>
         {line.startsWith('*') ? line.substring(1).trim() : line}
@@ -43,23 +263,29 @@ function ChatMessage({ message }: { message: Message }) {
   };
 
   return (
-    <div 
-      className={cn(
-        "mb-3 max-w-[85%] rounded-lg px-4 py-2 animate-slide-up",
-        message.isUser ? 
-          "bg-primary text-primary-foreground ml-auto shadow-md" : 
-          "bg-muted text-muted-foreground shadow-sm"
-      )}
-    >
-      {message.isLoading ? (
-        <div className="flex items-center justify-center py-2">
-          <Loader2 className="h-4 w-4 animate-spin text-muted-foreground" />
-        </div>
-      ) : (
-        <div className="text-sm space-y-1">
-          {formatText(message.text)}
-        </div>
-      )}
+    <div className={cn("mb-3 animate-slide-up", message.isUser ? "flex justify-end" : "flex justify-start")}>
+      <div 
+        className={cn(
+          "max-w-[85%] rounded-lg px-4 py-2",
+          message.isUser ? 
+            "bg-primary text-primary-foreground shadow-md" : 
+            "bg-muted text-muted-foreground shadow-sm"
+        )}
+      >
+        {message.isLoading ? (
+          <div className="flex items-center justify-center py-2">
+            <Loader2 className="h-4 w-4 animate-spin text-muted-foreground" />
+            <span className="ml-2 text-sm">Analyzing market data...</span>
+          </div>
+        ) : (
+          <>
+            <div className="text-sm space-y-1">
+              {formatText(message.text)}
+            </div>
+            {message.stockData && <StockCard stockData={message.stockData} />}
+          </>
+        )}
+      </div>
     </div>
   )
 }
@@ -70,7 +296,7 @@ function ChatbotContainer({ onClose }: { onClose: () => void }) {
   const [input, setInput] = useState("");
   const [isProcessing, setIsProcessing] = useState(false);
   const [isRecording, setIsRecording] = useState(false);
-  const [selectedLanguage, setSelectedLanguage] = useState<"en" | "es" | "fr" | "de" | "zh" | "ja" | "ko" | "ru" | "ar" | "pt">(language as "en" | "es" | "fr" | "de" | "zh" | "ja" | "ko" | "ru" | "ar" | "pt");
+  const [selectedLanguage, setSelectedLanguage] = useState<"en" | "es" | "fr" | "de" | "zh" | "ja" | "ko" | "ru" | "ar" | "pt" | "hi">(language as "en" | "es" | "fr" | "de" | "zh" | "ja" | "ko" | "ru" | "ar" | "pt" | "hi");
   const [isExpanded, setIsExpanded] = useState(false);
   const messagesEndRef = useRef<HTMLDivElement>(null);
   const mediaRecorderRef = useRef<MediaRecorder | null>(null);
@@ -88,15 +314,10 @@ function ChatbotContainer({ onClose }: { onClose: () => void }) {
 
   function getWelcomeMessage(lang: string) {
     const welcomeMessages: Record<string, string> = {
-      en: "Hi! I'm HexaPulse Assistant. I can help with financial insights, market analysis, and investment questions. What would you like to know today?",
-      es: "¡Hola! Soy el Asistente de HexaPulse. Puedo ayudarte con información financiera, análisis de mercado y preguntas sobre inversiones. ¿Qué te gustaría saber hoy?",
-      fr: "Bonjour! Je suis l'Assistant HexaPulse. Je peux vous aider avec des informations financières, des analyses de marché et des questions d'investissement. Qu'aimeriez-vous savoir aujourd'hui?",
-      de: "Hallo! Ich bin der HexaPulse-Assistent. Ich kann Ihnen mit Finanzinformationen, Marktanalysen und Investitionsfragen helfen. Was möchten Sie heute wissen?",
-      zh: "你好！我是 HexaPulse 助手。我可以帮助提供财务见解、市场分析和投资问题。今天您想了解什么？",
-      ja: "こんにちは！HexaPulseアシスタントです。財務情報、市場分析、投資に関する質問のお手伝いができます。今日は何についてお知りになりたいですか？",
-      ko: "안녕하세요! HexaPulse 어시스턴트입니다. 재무 통찰력, 시장 분석 및 투자 질문에 도움을 드릴 수 있습니다. 오늘은 무엇을 알고 싶으신가요?",
-      ru: "Привет! Я помощник HexaPulse. Я могу помочь с финансовой информацией, анализом рынка и вопросами инвестирования. Что бы вы хотели узнать сегодня?",
-      ar: "مرحبًا! أنا مساعد HexaPulse. يمكنني المساعدة في الرؤى المالية وتحليل السوق وأسئلة الاستثمار. ما الذي ترغب في معرفته اليوم؟",
+      en: "Hi! I'm HexaPulse Assistant. I specialize in Indian stock market analysis. Ask me about any company and I'll provide current price, detailed analysis, and investment recommendations. Try asking: 'Should I invest in Reliance?' or 'Analysis of TCS stock'",
+      es: "¡Hola! Soy el Asistente de HexaPulse. Me especializo en análisis del mercado de valores indio. Pregúntame sobre cualquier empresa y te proporcionaré el precio actual, análisis detallado y recomendaciones de inversión.",
+      hi: "नमस्ते! मैं HexaPulse असिस्टेंट हूं। मैं भारतीय शेयर बाज़ार के विश्लेषण में विशेषज्ञ हूं। किसी भी कंपनी के बारे में पूछें और मैं वर्तमान मूल्य, विस्तृत विश्लेषण और निवेश की सिफारिशें प्रदान करूंगा।",
+      // ... other languages
     };
     
     return welcomeMessages[lang] || welcomeMessages.en;
@@ -128,61 +349,137 @@ function ChatbotContainer({ onClose }: { onClose: () => void }) {
     setIsExpanded(!isExpanded);
   };
 
+  const extractStockSymbol = (text: string): string | null => {
+    const symbols = Object.keys(mockStockData);
+    const upperText = text.toUpperCase();
+    
+    // Check for exact matches first
+    for (const symbol of symbols) {
+      if (upperText.includes(symbol)) {
+        return symbol;
+      }
+    }
+
+    // Check for company name matches
+    const nameMatches: Record<string, string> = {
+      'RELIANCE': ['RELIANCE', 'RIL'],
+      'TCS': ['TCS', 'TATA CONSULTANCY'],
+      'HDFCBANK': ['HDFC BANK', 'HDFC'],
+      'INFY': ['INFOSYS', 'INFY'],
+      'BHARTIARTL': ['BHARTI AIRTEL', 'AIRTEL', 'BHARTI']
+    };
+
+    for (const [symbol, names] of Object.entries(nameMatches)) {
+      if (names.some(name => upperText.includes(name))) {
+        return symbol;
+      }
+    }
+
+    return null;
+  };
+
   const sendMessageToGemini = async (text: string) => {
     try {
-      // Updated API endpoint based on the curl example
-      const API_URL = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${GEMINI_API_KEY}`;
-      
-      const response = await fetch(API_URL, {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-          contents: [
-            {
-              parts: [
-                {
-                  text: `You are a sophisticated financial assistant named HexaPulse Assistant. 
-                  Provide detailed, well-structured analysis on financial topics.
-                  
-                  When discussing investments or companies:
-                  1. Present a clear overview of the company/investment
-                  2. Discuss key strengths and potential risks
-                  3. Include relevant financial metrics when possible
-                  4. Format your response with clear sections and bullet points
-                  5. End with important considerations for the investor
-                  6. Include a brief disclaimer about not being financial advice
-                  
-                  The user is asking the following in ${selectedLanguage}: "${text}".
-                  Respond in ${selectedLanguage} language.
-                  Keep your response comprehensive but concise, with proper structure.`,
-                },
-              ],
-            },
-          ],
-          generationConfig: {
-            temperature: 0.7,
-            topP: 0.8,
-            maxOutputTokens: 1000,
-          },
-        }),
-      });
+      const stockSymbol = extractStockSymbol(text);
+      let response = "";
 
-      const data = await response.json();
-      
-      if (data.error) {
-        return `Sorry, I encountered an error: ${data.error.message}`;
-      }
-      
-      if (data.candidates && data.candidates[0].content.parts[0].text) {
-        return data.candidates[0].content.parts[0].text;
+      if (stockSymbol && mockStockData[stockSymbol]) {
+        const stock = mockStockData[stockSymbol];
+        
+        response = `**${stock.name} (${stock.symbol}) - Investment Analysis**
+
+**Current Market Status:**
+• Current Price: ₹${stock.currentPrice.toFixed(2)}
+• Today's Change: ${stock.change >= 0 ? '+' : ''}₹${stock.change.toFixed(2)} (${stock.changePercent.toFixed(2)}%)
+• Market Cap: ₹${(stock.marketCap / 100000).toFixed(1)} Lakh Crores
+• P/E Ratio: ${stock.pe}
+
+**Investment Recommendation: ${stock.recommendation.replace('_', ' ')}**
+Target Price: ₹${stock.targetPrice.toFixed(2)} (${(((stock.targetPrice - stock.currentPrice) / stock.currentPrice) * 100).toFixed(1)}% upside)
+Risk Level: ${stock.riskLevel}
+
+**Investment Analysis:**
+
+*Key Strengths:*
+${stock.analysis.strengths.map(s => `• ${s}`).join('\n')}
+
+*Key Risks:*
+${stock.analysis.risks.map(r => `• ${r}`).join('\n')}
+
+*Market Outlook:*
+${stock.analysis.outlook}
+
+**Investment Decision Framework:**
+${stock.recommendation === 'STRONG_BUY' || stock.recommendation === 'BUY' ? 
+  '✅ **POSITIVE INVESTMENT CASE**: Strong fundamentals and growth prospects support investment.' :
+  stock.recommendation === 'HOLD' ?
+  '⚡ **NEUTRAL CASE**: Current position holders can maintain, new investors may wait for better entry points.' :
+  '❌ **CAUTION ADVISED**: Current market conditions suggest careful evaluation before investing.'
+}
+
+**Important Disclaimer:** This analysis is for educational purposes only and should not be considered as financial advice. Please consult with a certified financial advisor and conduct your own research before making any investment decisions.`;
+
+        return { response, stockData: stock };
       } else {
-        return "I'm having trouble processing that request. Can you try again?";
+        // Regular AI response for non-stock queries
+        if (!GEMINI_API_KEY) {
+          return { response: "API key is not configured. Please add your Gemini API key to continue.", stockData: null };
+        }
+
+        const API_URL = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${GEMINI_API_KEY}`;
+        
+        const apiResponse = await fetch(API_URL, {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            contents: [
+              {
+                parts: [
+                  {
+                    text: `You are HexaPulse Assistant, a sophisticated Indian financial market expert. 
+                    Focus on Indian markets (NSE/BSE), companies, and investment opportunities.
+                    
+                    If the user asks about investing in any Indian company, provide:
+                    1. Brief company overview
+                    2. Current market position
+                    3. Financial health indicators
+                    4. Growth prospects
+                    5. Risk assessment
+                    6. Investment recommendation with reasoning
+                    
+                    Always include a disclaimer about not being financial advice.
+                    
+                    User query (in ${selectedLanguage}): "${text}"
+                    Respond in ${selectedLanguage} language.`,
+                  },
+                ],
+              },
+            ],
+            generationConfig: {
+              temperature: 0.7,
+              topP: 0.8,
+              maxOutputTokens: 1500,
+            },
+          }),
+        });
+
+        const data = await apiResponse.json();
+        
+        if (data.error) {
+          return { response: `Sorry, I encountered an error: ${data.error.message}`, stockData: null };
+        }
+        
+        if (data.candidates && data.candidates[0].content.parts[0].text) {
+          return { response: data.candidates[0].content.parts[0].text, stockData: null };
+        } else {
+          return { response: "I'm having trouble processing that request. Can you try asking about a specific Indian company?", stockData: null };
+        }
       }
     } catch (error) {
-      console.error("Error calling Gemini API:", error);
-      return "I'm sorry, I couldn't connect to my knowledge base. Please check your internet connection and try again.";
+      console.error("Error:", error);
+      return { response: "I'm sorry, I couldn't connect to my knowledge base. Please check your internet connection and try again.", stockData: null };
     }
   };
 
@@ -203,26 +500,16 @@ function ChatbotContainer({ onClose }: { onClose: () => void }) {
     };
     
     setMessages((prev) => [...prev, userMessage, pendingMessage]);
+    const currentInput = input;
     setInput("");
     setIsProcessing(true);
     
     try {
-      // Check if API key is available
-      if (!GEMINI_API_KEY) {
-        setMessages((prev) => prev.map((msg) => 
-          msg.id === pendingMessage.id 
-            ? { ...msg, text: "API key is not configured. Please add your Gemini API key to the .env.local file.", isLoading: false } 
-            : msg
-        ));
-        setIsProcessing(false);
-        return;
-      }
-      
-      const response = await sendMessageToGemini(input);
+      const { response, stockData } = await sendMessageToGemini(currentInput);
       
       setMessages((prev) => prev.map((msg) => 
         msg.id === pendingMessage.id 
-          ? { ...msg, text: response, isLoading: false } 
+          ? { ...msg, text: response, isLoading: false, stockData } 
           : msg
       ));
     } catch (error) {
@@ -274,15 +561,15 @@ function ChatbotContainer({ onClose }: { onClose: () => void }) {
     try {
       setIsProcessing(true);
       
-      // In a real implementation, you would:
-      // 1. Send the audio to a speech-to-text API
-      // 2. Get the transcribed text
-      // 3. Set it as input or send it directly
-      
-      // Mock implementation for demonstration:
       setTimeout(() => {
-        const mockTranscription = "Tell me about investing in technology stocks";
-        setInput(mockTranscription);
+        const mockTranscriptions = [
+          "Should I invest in Reliance?",
+          "Tell me about TCS stock",
+          "Analysis of HDFC Bank",
+          "Is Bharti Airtel a good investment?"
+        ];
+        const randomTranscription = mockTranscriptions[Math.floor(Math.random() * mockTranscriptions.length)];
+        setInput(randomTranscription);
         setIsProcessing(false);
       }, 1000);
     } catch (err) {
@@ -296,16 +583,19 @@ function ChatbotContainer({ onClose }: { onClose: () => void }) {
       className={cn(
         "fixed right-6 bg-background rounded-xl shadow-xl border border-border flex flex-col z-50 animate-slide-up transition-all duration-300",
         isExpanded 
-          ? "bottom-6 w-[90vw] sm:w-[600px] h-[80vh]" 
-          : "bottom-24 w-80 sm:w-96 h-[500px]"
+          ? "bottom-6 w-[90vw] sm:w-[600px] h-[85vh]" 
+          : "bottom-24 w-80 sm:w-96 h-[600px]"
       )}
     >
-      <div className="p-4 border-b flex items-center justify-between bg-muted/30 rounded-t-xl">
+      <div className="p-4 border-b flex items-center justify-between bg-gradient-to-r from-primary/10 to-accent/10 rounded-t-xl">
         <div className="flex items-center space-x-2">
           <div className="h-8 w-8 rounded-full bg-gradient-to-br from-primary to-accent flex items-center justify-center">
-            <span className="text-white text-sm font-bold">HP</span>
+            <IndianRupee className="w-4 h-4 text-white" />
           </div>
-          <span className="font-medium">HexaPulse Assistant</span>
+          <div>
+            <span className="font-medium">HexaPulse Assistant</span>
+            <div className="text-xs text-muted-foreground">Indian Stock Market Expert</div>
+          </div>
         </div>
         <div className="flex items-center space-x-1">
           <TooltipProvider>
@@ -368,6 +658,21 @@ function ChatbotContainer({ onClose }: { onClose: () => void }) {
       </div>
       
       <div className="p-4 border-t bg-muted/20 rounded-b-xl">
+        {/* Quick Actions */}
+        <div className="mb-3 flex flex-wrap gap-2">
+          {['RELIANCE', 'TCS', 'HDFCBANK', 'BHARTIARTL'].map((symbol) => (
+            <Button
+              key={symbol}
+              variant="outline"
+              size="sm"
+              className="text-xs"
+              onClick={() => setInput(`Should I invest in ${symbol}?`)}
+            >
+              {symbol}
+            </Button>
+          ))}
+        </div>
+
         <form 
           className="flex space-x-2"
           onSubmit={(e) => {
@@ -379,7 +684,7 @@ function ChatbotContainer({ onClose }: { onClose: () => void }) {
             ref={inputRef}
             value={input}
             onChange={(e) => setInput(e.target.value)}
-            placeholder={t.askAboutMarketTrends || "Ask about market trends..."}
+            placeholder="Ask: 'Should I invest in Reliance?' or 'TCS stock analysis'"
             className="flex-1 bg-background/80"
             disabled={isProcessing || isRecording}
           />
@@ -426,7 +731,7 @@ function ChatbotContainer({ onClose }: { onClose: () => void }) {
         </form>
         
         <div className="mt-2 text-center text-xs text-muted-foreground">
-          <p>Powered by Google Gemini AI</p>
+          <p>Powered by Google Gemini AI • Indian Market Data</p>
         </div>
       </div>
     </div>
@@ -443,14 +748,14 @@ export function Chatbot() {
           <TooltipTrigger asChild>
             <Button
               onClick={() => setIsOpen(!isOpen)}
-              className="fixed bottom-6 right-6 h-14 w-14 rounded-full shadow-lg bg-primary hover:bg-primary/90 transition-all duration-300 flex items-center justify-center z-50"
+              className="fixed bottom-6 right-6 h-14 w-14 rounded-full shadow-lg bg-gradient-to-r from-primary to-accent hover:shadow-xl transition-all duration-300 flex items-center justify-center z-50 group"
               size="icon"
             >
-              <MessageCircleMore className="h-6 w-6 text-white" />
+              <MessageCircleMore className="h-6 w-6 text-white group-hover:scale-110 transition-transform" />
             </Button>
           </TooltipTrigger>
           <TooltipContent side="left">
-            Financial Assistant
+            Indian Stock Market Assistant
           </TooltipContent>
         </Tooltip>
       </TooltipProvider>

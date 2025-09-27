@@ -43,10 +43,7 @@ export function Navigation() {
         <div className="flex items-center justify-between h-16">
           {/* Enhanced Logo */}
           <Link href="/" className="flex items-center space-x-3 group">
-            <div className="relative w-10 h-10 bg-gradient-to-br from-primary via-blue-500 to-accent rounded-xl flex items-center justify-center animate-glow group-hover:scale-110 transition-all duration-300 shadow-lg">
-              <TrendingUp className="w-6 h-6 text-white" />
-              <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-accent/20 rounded-xl blur-xl -z-10 group-hover:blur-2xl transition-all duration-300"></div>
-            </div>
+
             <div className="flex flex-col">
               <span className="text-xl font-bold bg-gradient-to-r from-primary via-blue-600 to-accent bg-clip-text text-transparent">
                 HexaPulse
