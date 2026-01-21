@@ -17,7 +17,7 @@ interface IndexData {
 export function IndianMarketIndices() {
   const [indices, setIndices] = useState<IndexData[]>([
     {
-      name: "SENSEX",
+      name: "SEN",
       value: 81159.68,
       change: 245.32,
       changePercent: 0.30,
